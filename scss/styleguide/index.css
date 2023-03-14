@@ -34193,8 +34193,6 @@ input[type=number]::-webkit-inner-spin-button {
    HTML elements 
 */
 body {
-  background-color: #dcdbdb;
-  font-family: "DM Sans", sans-serif !important;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -34209,68 +34207,45 @@ body {
      Table buttons
   */
   /* 
-     Table input fields
+     Table Breadcrumbs
   */
-  /* 
-     Table selections
-  */
-}
-body td {
-  border-right: 2px solid #024913;
-  width: 100px;
 }
 body th {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
 }
 body h1, body .h1 {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 74px;
 }
 body h2, body .h2 {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 44px;
   line-height: 48px;
 }
 body h3, body .h3 {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 38px;
   line-height: 48px;
 }
 body h4, body .h4 {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
 }
 body h5, body .h5 {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 34px;
 }
 body h6, body .h6 {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
 }
 body p {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -34298,38 +34273,43 @@ body p.body-extra-small {
   font-size: 12px;
   line-height: 22px;
 }
+body a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  line-height: 26px;
+}
 body .link {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
   text-decoration: underline;
-  /* visited link */
+  color: #000;
   /* mouse over link */
-}
-body .link.visited {
-  color: green;
 }
 body .link:hover {
   cursor: pointer;
   color: #B79B6C;
 }
+body td {
+  border-right: 2px solid #024913;
+  width: 100px;
+}
 body td:nth-child(1) {
   width: 18%;
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
 }
 body td + td {
   width: 35%;
+  text-align: center;
 }
 body td + td + td {
+  text-align: start;
   width: 47%;
 }
 body td + td + td p {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -34338,12 +34318,9 @@ body td + td + td p {
 body .styled-table {
   border-collapse: collapse;
   margin: 25px 0;
-  font-size: 0.9em;
-  font-family: sans-serif;
   width: 1400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   border: 3px solid #024913;
-  font-family: "DM Sans";
 }
 body .styled-table.styled-table thead tr {
   background-color: #dfe5e1;
@@ -34360,7 +34337,7 @@ body .styled-table.styled-table tbody tr:nth-of-type(odd) {
   background-color: white;
 }
 body .styled-table.styled-table tbody tr:nth-of-type(even) {
-  background-color: rgba(253, 251, 251, 0.9725490196);
+  background-color: #fafafa;
 }
 body .styled-table.styled-table tbody tr:first-of-type {
   border-top: 2px solid #024913;
@@ -34369,13 +34346,13 @@ body .info-row-position {
   display: flex;
   flex-direction: row;
   width: 100%;
+  border-right: none;
 }
 body .info-col-1 {
   margin-right: 100px;
 }
-body .pallete-colors {
+body table:nth-child(2) tbody tr td:nth-child(2) div {
   padding: 10px 0 0 10px;
-  height: 35px;
   color: transparent;
   /* primary colors */
   /* secondary colors */
@@ -34384,123 +34361,123 @@ body .pallete-colors {
   /* info colors */
   /* succes colors */
 }
-body .pallete-colors.primary-lightest {
+body table:nth-child(2) tbody tr td:nth-child(2) div.primary-lightest {
   background: #ECD9BB;
 }
-body .pallete-colors.primary-lighter {
+body table:nth-child(2) tbody tr td:nth-child(2) div.primary-lighter {
   background-color: #DBC195;
 }
-body .pallete-colors.primary-basis {
+body table:nth-child(2) tbody tr td:nth-child(2) div.primary-basis {
   background-color: #B79B6C;
 }
-body .pallete-colors.primary-darker {
+body table:nth-child(2) tbody tr td:nth-child(2) div.primary-darker {
   background-color: #A48043;
 }
-body .pallete-colors.primary-darkest {
+body table:nth-child(2) tbody tr td:nth-child(2) div.primary-darkest {
   background-color: #7A5921;
 }
-body .pallete-colors.secondary-lightest {
+body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-lightest {
   background-color: black;
   opacity: 20%;
 }
-body .pallete-colors.secondary-lighter {
+body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-lighter {
   background-color: black;
   opacity: 40%;
 }
-body .pallete-colors.secondary-basis {
+body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-basis {
   background-color: black;
   opacity: 60%;
 }
-body .pallete-colors.secondary-darker {
+body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-darker {
   background-color: black;
   opacity: 80%;
 }
-body .pallete-colors.secondary-darkest {
+body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-darkest {
   background-color: black;
   opacity: 100%;
 }
-body .pallete-colors.warning-lightest {
+body table:nth-child(2) tbody tr td:nth-child(2) div.warning-lightest {
   background-color: #FCF5CF;
 }
-body .pallete-colors.warning-lighter {
+body table:nth-child(2) tbody tr td:nth-child(2) div.warning-lighter {
   background-color: #F6E06F;
 }
-body .pallete-colors.warning-basis {
+body table:nth-child(2) tbody tr td:nth-child(2) div.warning-basis {
   background-color: #F0CC0F;
 }
-body .pallete-colors.warning-darker {
+body table:nth-child(2) tbody tr td:nth-child(2) div.warning-darker {
   background-color: #C0A30C;
 }
-body .pallete-colors.warning-darkest {
+body table:nth-child(2) tbody tr td:nth-child(2) div.warning-darkest {
   background-color: #907A09;
 }
-body .pallete-colors.error-lightest {
+body table:nth-child(2) tbody tr td:nth-child(2) div.error-lightest {
   background-color: #F7D4D4;
 }
-body .pallete-colors.error-lighter {
+body table:nth-child(2) tbody tr td:nth-child(2) div.error-lighter {
   background-color: #E87D7D;
 }
-body .pallete-colors.error-basis {
+body table:nth-child(2) tbody tr td:nth-child(2) div.error-basis {
   background-color: #D92626;
 }
-body .pallete-colors.error-darker {
+body table:nth-child(2) tbody tr td:nth-child(2) div.error-darker {
   background-color: #AE1E1E;
 }
-body .pallete-colors.error-darkest {
+body table:nth-child(2) tbody tr td:nth-child(2) div.error-darkest {
   background-color: #821717;
 }
-body .pallete-colors.info-lightest {
+body table:nth-child(2) tbody tr td:nth-child(2) div.info-lightest {
   background-color: #A7CFF0;
 }
-body .pallete-colors.info-lighter {
+body table:nth-child(2) tbody tr td:nth-child(2) div.info-lighter {
   background-color: #76ACD9;
 }
-body .pallete-colors.info-basis {
+body table:nth-child(2) tbody tr td:nth-child(2) div.info-basis {
   background-color: #488EC8;
 }
-body .pallete-colors.info-darker {
+body table:nth-child(2) tbody tr td:nth-child(2) div.info-darker {
   background-color: #3075AE;
 }
-body .pallete-colors.info-darkest {
+body table:nth-child(2) tbody tr td:nth-child(2) div.info-darkest {
   background-color: #235681;
 }
-body .pallete-colors.succes-lightest {
+body table:nth-child(2) tbody tr td:nth-child(2) div.succes-lightest {
   background-color: #D9F7D4;
 }
-body .pallete-colors.succes-lighter {
+body table:nth-child(2) tbody tr td:nth-child(2) div.succes-lighter {
   background-color: #8CE87D;
 }
-body .pallete-colors.succes-basis {
+body table:nth-child(2) tbody tr td:nth-child(2) div.succes-basis {
   background-color: #3FD926;
 }
-body .pallete-colors.succes-darker {
+body table:nth-child(2) tbody tr td:nth-child(2) div.succes-darker {
   background-color: #32AE1E;
 }
-body .pallete-colors.succes-darkest {
+body table:nth-child(2) tbody tr td:nth-child(2) div.succes-darkest {
   background-color: #268217;
 }
 body table:nth-child(3) tbody tr:nth-child(4) td:nth-child(2) {
-  background-color: #fcf6d7;
+  background-color: #ECD9BB;
 }
 body .main-frontend {
   height: 40px;
 }
 body table:nth-child(3) tbody tr:nth-child(6) td:nth-child(2) {
-  background-color: #fcf6d7;
+  background-color: #ECD9BB;
 }
 body .section-under-navbar {
   height: 40px;
 }
 body table:nth-child(3) tbody tr:nth-child(7) td:nth-child(2) {
-  background-color: #fcf6d7;
+  background-color: #ECD9BB;
 }
 body .tabs a {
-  color: black;
-  font-size: 16px;
-  line-height: 26px;
   font-weight: 400 !important;
 }
 body .main-backend {
   background-color: #fafafa;
   height: 24px;
+}
+body .breadcrumb-item::before {
+  padding-right: 10px !important;
 }/*# sourceMappingURL=index.css.map */
