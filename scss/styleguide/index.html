@@ -14,7 +14,7 @@
     </head>
     <body class="bg-light">
         <!-- Table for text -->
-        <table class="styled-table">
+        <table class="styled-table text">
             <thead>
                 <tr><th colspan="3">Text</th></tr>
             </thead>
@@ -656,18 +656,16 @@
             <tbody class="product_filter">
                 <tr>
                     <td>Active filters</td>
-                    <td>
-                        <div class="filter_block">
-                            <div class="d-flex activeFilter">
-                                <div>Overige Wandafwerkingsmaterialen
-                                    <a href="#" wire:click.prevent="deleteFromFilter('selectedCategories','0')">x</a>
-                                </div>
-                                <div>Overige Houtsoorten
-                                    <a href="#" wire:click.prevent="deleteFromFilter('selectedMaterials','0')">x</a>
-                                </div>
-                                <div>Bruin
-                                    <a href="#" wire:click.prevent="deleteFromFilter('selectedColors','0')">x</a>
-                                </div>
+                    <td class="filter_block">
+                        <div class="d-flex activeFilter">
+                            <div>Overige Wandafwerkingsmaterialen
+                                <a href="#" wire:click.prevent="deleteFromFilter('selectedCategories','0')">x</a>
+                            </div>
+                            <div>Overige Houtsoorten
+                                <a href="#" wire:click.prevent="deleteFromFilter('selectedMaterials','0')">x</a>
+                            </div>
+                            <div>Bruin
+                                <a href="#" wire:click.prevent="deleteFromFilter('selectedColors','0')">x</a>
                             </div>
                         </div>
                     </td>
@@ -675,34 +673,82 @@
                 </tr>
                 <tr>
                     <td>Primary category</td>
-                    <td>
+                    <td class="filter_block">
+                        <div class="w-75">
+                            <div class="filter_block-heading d-flex justify-content-between" @click.prevent="open = !open">
+                                <h5>Productcategorieën</h5>
+                                <a href="#" class="filter_block-toggle" x-text="open ? '-' : '+'">+</a>
+                            </div>
+                            <div class="filter_block-heading d-flex justify-content-between" @click.prevent="open = !open">
+                                <h5>Productcategorieën</h5>
+                                <a href="#" class="filter_block-toggle icon-position" x-text="open ? '-' : '+'">-</a>
+                            </div>
+                        </div>
                     </td>
                     <td></td>                                               
                 </tr>
                 <tr>
                     <td>secondary category</td>
-                    <td></td>
+                    <td class="filter_block">
+                        <div class="filter_block-multiple_items w-75">
+                            <a href="#" :class="{'d-none': cat_1 !== null &amp;&amp; cat_1 !== 'building_elements', 'filter-selected': cat_1 == 'building_elements'}" @click.prevent="clickTopLevel('building_elements')" class="filter_block-multiple_items-item d-flex justify-content-between filter-level-2">
+                                Bouwelementen
+                                <span class="filter_block-toggle" x-show="cat_1 !== 'building_elements'">+</span>
+                                <span href="#" class="filter_block-toggle" x-show="cat_1 === 'building_elements'" style="display: none;">x</span>
+                            </a>
+                            <a href="#" :class="{'d-none': cat_1 !== null &amp;&amp; cat_1 !== 'building_elements', 'filter-selected': cat_1 == 'building_elements'}" @click.prevent="clickTopLevel('building_elements')" class="filter_block-multiple_items-item d-flex justify-content-between filter-level-2 filter-selected">
+                                Bouwelementen
+                                <span class="filter_block-toggle" x-show="cat_1 !== 'building_elements'" style="display: none;">+</span>
+                                <span href="#" class="filter_block-toggle icon-position" x-show="cat_1 === 'building_elements'">x</span>
+                            </a>
+                        </div>
+                    </td>
                     <td></td>                                               
                 </tr>
                 <tr>
                     <td>Tertiar category</td>
-                    <td></td>
+                    <td class="filter_block">
+                        <div class="filter_block-multiple_items w-75">
+                            <a href="#" @click.prevent="resetSubLevel('conmat')" :class="{'d-none': cat_2 !== null &amp;&amp; cat_2 !== 'conmat', 'filter-selected': cat_2 == 'conmat'}" class="filter_block-multiple_items-item d-flex justify-content-between filter-level-3">
+                                Constructiematerialen
+                                <span class="filter_block-toggle" x-show="cat_2 !== 'conmat'">+</span>
+                                <span class="filter_block-toggle" x-show="cat_2 === 'conmat'" style="display: none;">x</span>
+                            </a>
+                            <a href="#" @click.prevent="resetSubLevel('conmat')" :class="{'d-none': cat_2 !== null &amp;&amp; cat_2 !== 'conmat', 'filter-selected': cat_2 == 'conmat'}" class="filter_block-multiple_items-item d-flex justify-content-between filter-level-3 filter-selected">
+                                Constructiematerialen
+                                <span class="filter_block-toggle" x-show="cat_2 !== 'conmat'" style="display: none;">+</span>
+                                <span class="filter_block-toggle icon-position" x-show="cat_2 === 'conmat'">x</span>
+                            </a>
+                        </div>
+                    </td>
                     <td></td>                                               
                 </tr>
                 <tr>
                     <td>Quaternary category</td>
-                    <td></td>
-                    <td></td>                                               
-                </tr>
-                <tr>
-                    <td>Category items</td>
-                    <td></td>
+                    <td>
+                        <div class="filter_block-multiple_items-item d-flex justify-content-between filter-level-5 latest-row" :class="{'filter-selected': selectedCategories.includes('conmat_external_masonry_blocks')}">
+                            <label class="d-flex align-items-center">
+                                <div class="custom-checkbox">
+                                    <input class="me-2" type="checkbox" value="conmat_external_masonry_blocks" x-model="selectedCategories">
+                                    Metselblokken Buiten
+                                </div>
+                            </label>
+                        </div>
+                        <div class="filter_block-multiple_items-item d-flex justify-content-between filter-level-5 latest-row filter-selected" :class="{'filter-selected': selectedCategories.includes('conmat_external_masonry_blocks')}">
+                            <label class="d-flex align-items-center">
+                                <div class="custom-checkbox">
+                                    <input class="me-2" type="checkbox" value="conmat_external_masonry_blocks" x-model="selectedCategories">
+                                    Metselblokken Buiten
+                                </div>
+                            </label>
+                        </div>
+                    </td>
                     <td></td>                                               
                 </tr>
                 <tr>
                     <td>Color choices</td>
                     <td>
-                        <div class="filter_block">
+                        <div>
                             <div class="filter_block-content">
                                 <div class="filter_block-colors">
                                     <div class="colorcheckbox beige" x-data="" x-tooltip.raw="Beige">

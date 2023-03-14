@@ -34201,6 +34201,9 @@ body {
      Table styling
   */
   /* 
+     Table Text
+  */
+  /* 
      Table colors
   */
   /* 
@@ -34208,6 +34211,9 @@ body {
   */
   /* 
      Table Breadcrumbs
+  */
+  /* 
+     Table Search filter
   */
 }
 body th {
@@ -34222,8 +34228,8 @@ body h1, body .h1 {
 }
 body h2, body .h2 {
   font-weight: 700;
-  font-size: 44px;
-  line-height: 48px;
+  font-size: 44px !important;
+  line-height: 48px !important;
 }
 body h3, body .h3 {
   font-weight: 700;
@@ -34237,8 +34243,8 @@ body h4, body .h4 {
 }
 body h5, body .h5 {
   font-weight: 700;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 22px;
+  line-height: 28px;
 }
 body h6, body .h6 {
   font-weight: 700;
@@ -34480,4 +34486,7 @@ body .main-backend {
 }
 body .breadcrumb-item::before {
   padding-right: 10px !important;
+}
+body .icon-position {
+  margin-right: 2px;
 }/*# sourceMappingURL=index.css.map */
