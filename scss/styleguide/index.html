@@ -30,147 +30,241 @@
                 <tr><th colspan="3">Text</th></tr>
             </thead>
             <tbody>
+                <!-- Product overview title -->
                 <tr>
-                    <td>H1</td>
-                    <td><h1>Headline Text 1 </h1></td>
+                    <td>Product overview title</td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 700;<br>
-                        font-size: 64px;<br>
-                        line-height: 74px;<br>  
+                        <div class="product_overview_item d-flex flex-column">
+                            <div class="d-flex justify-content-between product_overview-top">
+                                <a class="mb-0 product_overview-title" href="https://samplestore.webber.nl/nl/products/3">Oer</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <p>
+                            font-weight: 700;<br>
+                            font-size: 22px;<br>
+                            line-height: 24px;<br>
+                        </p>
+                    </td>     
                     </td>                                               
                 </tr>
+                <!-- Product overview from price text -->
                 <tr>
-                    <td>H2</td>
-                    <td><h2>Headline Text 2</h2></td>
+                    <td>Product overview from price text</td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 700;<br>
-                        font-size: 44px;<br>
-                        line-height: 48px;<br>
+                        <div class="product_overview_item d-flex flex-column">
+                            <div class="d-flex justify-content-between product_overview-top">
+                                <p class="mb-0 product_overview-price font-small flex-shrink-0 flex-grow-0">Vanaf € 20</p>
+                            </div>
+                        </div>
                     </td>
-                </tr>
-                <tr>
-                    <td>H3</td>
-                    <td><h3>Headline Text 3</h3></td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 700;<br>
-                        font-size: 38px;<br>
-                        line-height: 48px;<br>
+                        <p>
+                            font-weight: 400;<br>
+                            font-size: 16px;<br>
+                            line-height: 26px;<br>
+                            color: #666666;<br>
+                        </p>
+                    </td>     
                     </td>                                               
                 </tr>
+                <!-- Product overview subtitle -->
                 <tr>
-                    <td>H4</td>
-                    <td><h4>Headline Text 4</h4></td>
+                    <td>Product overview subtitle</td>
+                    <td class="product_overview-bottom">
+                        <div class="product_overview_item d-flex flex-column">
+                            <div class="product_overview-bottom">
+                                <p class="mb-0 font-small">Interface, Inc.</p>
+                            </div>
+                        </div>
+                    </td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 700;<br>
-                        font-size: 32px;<br>
-                        line-height: 38px;<br>
+                        <p>
+                            font-weight: 400;<br>
+                            font-size: 16px;<br>
+                            line-height: 26px;<br>
+                        </p>
+                    </td>     
                     </td>
                 </tr>
+                <!-- Product overview hover title -->
                 <tr>
-                    <td>H5</td>
-                    <td><h5>Headline Text 5</h5></td>
+                    <td>Product overview hover title</td>
+                    <td >
+                        <a class="product_overview_item-image-wrapper-supplier-name" href="https://samplestore.webber.nl/nl/products/3">Finsa Nederland</a>
+                    </td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 700;<br>
-                        font-size: 28px;<br>
-                        line-height: 34px;<br>
+                        <p>
+                            font-weight: 700;<br>
+                            font-size: 22px;<br>
+                            line-height: 24px;<br>
+                            text-decoration: underline;<br>
+                            :hover {color: $secondary-tint-3;}
+                        </p>
                     </td>                                               
                 </tr>
+                <!-- Product overview hover subtitle -->
                 <tr>
-                    <td>H6</td>
-                    <td><H6>Headline Text 6</H6></td>
+                    <td>Product overview hover subtitle</td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 700;<br>
-                        font-size: 22px;<br>
-                        line-height: 28px;<br>
+                        Sample geleverd door
+                    </td>
+                    <td>
+                        <p>
+                            font-weight: 400;<br>
+                            font-size: 16px;<br>
+                            line-height: 26px;<br>
+                        </p>
                     </td>
                 </tr>
+                <!-- Product overview hover from price text -->
                 <tr>
-                    <td>Body</td>
-                    <td><p>welcome to sample.store, the online marketplace for samples. As a material supplier you can easily add variants to your materials to showcase the different options available to potential customers</p></td>
+                    <td>Product overview hover from price text</td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 400;<br>
-                        font-size: 18px;<br>
-                        line-height: 30px;<br>
+                        <p class="font-extra-small m-0 mt-2">Meer leveranciers vanaf 
+                            <span class="fw-bold">€0,-</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            font-weight: 500;/font-weight: 700;<br>
+                            font-size: 12px;<br>
+                            line-height: 22px;<br>
+                        </p> 
                     </td>                                               
                 </tr>
+
+                <!-- Language options -->
                 <tr>
-                    <td>Body bold</td>
-                    <td><p class="body-bold">welcome to sample.store, the online marketplace for samples. As a material supplier you can easily add variants to your materials to showcase the different options available to potential customers</p></td>
+                    <td>Language options</td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 700;<br>
-                        font-size: 18px;<br>
-                        line-height: 28px;<br>
+                        <div class="languageselector d-flex align-items-center">
+                            <a href="#">
+                                Nederland
+                                <svg width="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                                </svg>
+                            </a>
+                            <div class="splitter">I</div>
+                            <a href="#">
+                                NL
+                                <svg width="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <p>
+                            font-weight: 500<br>
+                            font-size: 16px;<br>
+                            line-height: 22px;<br>
+                        </p> 
                     </td>
                 </tr>
+
+                <!-- Footer header -->
                 <tr>
-                    <td>Body small</td>
-                    <td><p class="body-small">welcome to sample.store, the online marketplace for samples. As a material supplier you can easily add variants to your materials to showcase the different options available to potential customers</p></td>
+                    <td>Footer header</td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 400;<br>
-                        font-size: 16px;<br>
-                        line-height: 26px;<br>
-                    </td>                                               
-                </tr>
-                <tr>
-                    <td>Body small bold</td>
-                    <td><p class="body-small-bold">welcome to sample.store, the online marketplace for samples. As a material supplier you can easily add variants to your materials to showcase the different options available to potential customers</p></td>
+                        <div class="footer p-2">
+                            <div class="container">
+                                <b class="text-white d-block">Meer van Sample.Store</b>
+                            </div>
+                        </div>  
+                    </td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 700;<br>
-                        font-size: 16px;<br>
-                        line-height: 26px;<br>
+                        <p>
+                            font-weight: 700<br>
+                            font-size: 18px;<br>
+                            line-height: 26px;<br>
+                            color: #ffffff;<br>
+                        </p> 
                     </td>
                 </tr>
+                <!-- Footer subheader -->
                 <tr>
-                    <td>Body extra small</td>
-                    <td><p class="body-extra-small">welcome to sample.store, the online marketplace for samples. As a material supplier you can easily add variants to your materials to showcase the different options available to potential customers</p></td>
+                    <td>Footer subheader</td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 400;<br>
-                        font-size: 12px;<br>
-                        line-height: 22px;<br>
+                        <div class="footer p-2">
+                            <div class="container">
+                                <a href="#">Uw producten van Sample.Store</a>
+                            </div>
+                        </div>  
+                    </td>
+                    <td>
+                        <p>
+                            font-weight: 400<br>
+                            font-size: 18px;<br>
+                            line-height: 26px;<br>
+                            color: #ababab;<br>
+                        </p> 
                     </td>
                 </tr>
+                <!-- Footer header link -->
                 <tr>
-                    <td>Link</td>
-                    <td><a class="link">welcome to sample.store, the online marketplace for samples. As a material supplier you can easily add variants to your materials to showcase the different options available to potential customers</a></td>
+                    <td>Footer header link</td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 500;<br>
-                        font-size: 18px;<br>
-                        line-height: 28px;<br>
+                        <div class="footer p-2">
+                            <div class="container">
+                                <a class="text-white text-decoration-underline" href="#">Abboneer op ons nieuwsbrief</a>
+                            </div>
+                        </div>  
+                    </td>
+                    <td>
+                        <p>
+                            font-weight: 400<br>
+                            font-size: 18px;<br>
+                            line-height: 26px;<br>
+                            color: #ffffff;<br>
+                            text-decoration: underline;<br>
+                        </p> 
                     </td>
                 </tr>
+                <!-- Footer info -->
                 <tr>
-                    <td>Visited link</td>
-                    <td><a class="link text-success">welcome to sample.store, the online marketplace for samples. As a material supplier you can easily add variants to your materials to showcase the different options available to potential customers</a></td>
+                    <td>Footer info</td>
                     <td>
-                        font-family: 'DM Sans';<br>
-                        font-style: normal;<br>
-                        font-weight: 500;<br>
-                        font-size: 18px;<br>
-                        line-height: 28px;<br>
+                        <div class="footer p-1">
+                            <div class="container">
+                                <p class="text-white mt-4">Volg ons</p>
+                            </div>
+                        </div>  
+                    </td>
+                    <td>
+                        <p>
+                            font-weight: 400<br>
+                            font-size: 18px;<br>
+                            line-height: 26px;<br>
+                            color: #ffffff;<br>
+                        </p> 
+                    </td>
+                </tr>
+
+                <!-- Product  -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p>
+                            font-weight: 500;<br>
+                            font-size: 18px;<br>
+                            line-height: 28px;<br>
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Test environment  -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p>
+                            font-weight: 500;<br>
+                            font-size: 18px;<br>
+                            line-height: 28px;<br>
+                        </p>
                     </td>
                 </tr>
             </tbody>
@@ -411,8 +505,11 @@
                         <div class="main-frontend z-n1 w-100 bg-white"></div>
                     </td>
                     <td class="info-row-position">
-                        <p class="info-col-1"></p>
-                        <p></p>
+                        <p>
+                            font-size: 18px;<br>
+                            line-height: 30px;<br>
+                            font-weight: 400;<br>
+                        </p>
                     </td>  
                 </tr>
                 <tr>
@@ -463,7 +560,13 @@
                         </nav>
                         <div class="section-under-navbar w-100 bg-white"></div>
                     </td>
-                    <td></td>
+                    <td>
+                        <p>
+                            font-size: 16px;<br>
+                            line-height: 26px;<br>
+                            font-weight: 400;<br>
+                        </p>
+                    </td>
                 </tr>
                 <tr>
                     <td>Menu backend secondary</td>
@@ -486,15 +589,21 @@
                         </nav>
                         <div class="main-backend z-n1 w-100"></div>
                     </td>
-                    <td></td>
+                    <td>
+                        <p>
+                            font-size: 16px;<br>
+                            line-height: 26px;<br>
+                            font-weight: 400;<br>
+                        </p>
+                    </td>
                 </tr>
             </tbody>
         </table> 
 
-        <!-- Table for text fields -->
+        <!-- Table for form fields -->
         <table class="styled-table">
             <thead>
-                <tr><th colspan="3">Text Fields</th></tr>
+                <tr><th colspan="3">Form Fields</th></tr>
             </thead>
             <tbody>
                 <tr>
@@ -654,7 +763,13 @@
                             </a>
                         </div>
                     </td>
-                    <td></td>                                               
+                    <td>
+                        <p>
+                            font-size: 16px;<br>
+                            line-height: 26px;<br>
+                            font-weight: 400;<br>
+                        </p>
+                    </td>                                               
                 </tr>
             </tbody>
         </table>
@@ -665,6 +780,29 @@
                 <tr><th colspan="3">Search Filter</th></tr>
             </thead>
             <tbody class="product_filter">
+                <tr>
+                    <td>Active filters header</td>
+                    <td><h5>Actieve filters</h5></td>
+                    <td>
+                        <p>
+                            font-size: 22px;<br>
+                            line-height: 28px;<br>
+                            font-weight: 700;<br>
+                        </p>
+                    </td>                                               
+                </tr>
+                <tr>
+                    <td>Active filters link text</td>
+                    <td><a href="#" class="clear-filters-button" wire:click.prevent="clearAllFilters">Filters verwijderen</a></td>
+                    <td>
+                        <p>
+                            font-size: 16px;<br>
+                            line-height: 26px;<br>
+                            font-weight: 400;<br>
+                            text-decoration: underline;<br>
+                        </p>
+                    </td>
+                </tr>
                 <tr>
                     <td>Active filters</td>
                     <td class="filter_block">
@@ -680,7 +818,13 @@
                             </div>
                         </div>
                     </td>
-                    <td></td>                                               
+                    <td>
+                        <p>
+                            font-size: 16px;<br>
+                            line-height: 20px;<br>
+                            font-weight: 400;<br>
+                        </p>
+                    </td>                                               
                 </tr>
                 <tr>
                     <td>Primary category</td>
@@ -696,7 +840,13 @@
                             </div>
                         </div>
                     </td>
-                    <td></td>                                               
+                    <td>
+                        <p>
+                            font-size: 22px;<br>
+                            line-height: 28px;<br>
+                            font-weight: 700;<br>
+                        </p>
+                    </td>                                               
                 </tr>
                 <tr>
                     <td>secondary category</td>
@@ -714,7 +864,13 @@
                             </a>
                         </div>
                     </td>
-                    <td></td>                                               
+                    <td>
+                        <p>
+                            font-size: 18px;<br>
+                            line-height: 22px;<br>
+                            font-weight: 700;<br>
+                        </p>
+                    </td>                                               
                 </tr>
                 <tr>
                     <td>Tertiar category</td>
@@ -732,7 +888,13 @@
                             </a>
                         </div>
                     </td>
-                    <td></td>                                               
+                    <td>
+                        <p>
+                            font-size: 18px;<br>
+                            line-height: 22px;<br>
+                            font-weight: 500;<br>
+                        </p>
+                    </td>                                               
                 </tr>
                 <tr>
                     <td>Quaternary category</td>
@@ -754,7 +916,13 @@
                             </label>
                         </div>
                     </td>
-                    <td></td>                                               
+                    <td>
+                        <p>
+                            font-size: 16px;<br>
+                            line-height: 26px;<br>
+                            font-weight: 400;<br>
+                        </p>
+                    </td>                                               
                 </tr>
                 <tr>
                     <td>Color choices</td>
@@ -936,6 +1104,33 @@
                     </td>
                     <td></td>                                               
                 </tr>
+                <tr>
+                    <td>Range slider label</td>
+                    <td><p class="filter-level-2 no-hover">Afmeting Sample</p></td>
+                    <td>
+                        <p>    
+                            font-size: 18px;<br>
+                            line-height: 22px;<br>
+                            font-weight: 400;<br>
+                        </p>
+                    </td>                                               
+                    </tr>
+                <tr>
+                    <td>Range slider values</td>
+                    <td>
+                        <div class="d-flex justify-content-between mt-2">
+                            <p class="font-small mb-0 filter-level-6">Tot A6</p>
+                            <p class="font-small mb-0 filter-level-6">Vanaf A3</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>
+                            font-size: 12px;<br>
+                            line-height: 16px;<br>
+                            font-weight: 400;<br>
+                        </p>
+                    </td>
+                </tr>
             </tbody>
         </table>
         
@@ -968,7 +1163,23 @@
                             </div>
                         </div>
                     </td>
-                    <td></td>                                               
+                    <td class="info-row-position">
+                        <p class="info-col-1">
+                            .breadcrumb-item{<br>
+                                font-weight: 500;<br>
+                                font-size: 16px;<br>
+                                line-height: 26px;<br>
+                                :hover {color: $secondary-tint-3;}
+                                }<br>
+                        </p>
+                        <p>
+                            .active{<br>
+                                font-weight: 400;<br>
+                                font-size: 16px;<br>
+                                line-height: 26px;<br>
+                                color: $gray_tint_3}<br>
+                        </p>
+                    </td>                                               
                 </tr>
             </tbody>
         </table> 
@@ -983,6 +1194,19 @@
                     <td>Pagination</td>
                     <td></td>
                     <td></td>                                               
+                </tr>
+                <tr>
+                    <td>Page results</td>
+                    <td class="page-results">
+                        <div class="d-flex">18 resultaten</div>
+                    </td>
+                    <td>
+                        <p>
+                            font-size: 18px;<br>
+                            line-height: 26px;<br>
+                            font-weight: 400;<br>
+                        </p>
+                    </td>                                               
                 </tr>
             </tbody>
         </table>
