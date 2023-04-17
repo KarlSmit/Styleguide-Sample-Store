@@ -34213,6 +34213,9 @@ body {
      Form Fields
   */
   /* 
+     Table Selections
+  */
+  /* 
      Table Search filter
   */
   /* 
@@ -34261,9 +34264,6 @@ body p {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  /* 
-     Table text
-  */
 }
 body p.body-bold {
   font-weight: 700;
@@ -34367,6 +34367,31 @@ body a.product_overview_item-image-wrapper-supplier-name:hover {
 body .product-info {
   font-size: 18px !important;
   line-height: 28px !important;
+}
+body .backend-subtitle {
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 21px !important;
+  color: #121212 !important;
+}
+body .backend-table-column-label {
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 14px !important;
+  color: #333333 !important;
+}
+body .backend-table-customer-name {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 26px !important;
+  text-decoration: underline !important;
+  color: #121212 !important;
+}
+body .backend-table-content {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 26px !important;
+  color: #212529 !important;
 }
 body table:nth-child(2) tbody tr td:nth-child(2) div {
   padding: 10px 0 0 10px;
@@ -34473,19 +34498,22 @@ body table:nth-child(2) tbody tr td:nth-child(2) div.succes-darker {
 body table:nth-child(2) tbody tr td:nth-child(2) div.succes-darkest {
   background-color: #268217;
 }
-body table:nth-child(3) tbody tr:nth-child(4) td:nth-child(2) {
+body table:nth-child(3) tbody tr td:nth-child(2) {
+  text-align: center;
+}
+body table:nth-child(3) tbody tr:nth-child(5) td:nth-child(2) {
   background-color: #ECD9BB;
 }
 body .main-frontend {
   height: 40px;
 }
-body table:nth-child(3) tbody tr:nth-child(6) td:nth-child(2) {
+body table:nth-child(3) tbody tr:nth-child(7) td:nth-child(2) {
   background-color: #ECD9BB;
 }
 body .section-under-navbar {
   height: 40px;
 }
-body table:nth-child(3) tbody tr:nth-child(7) td:nth-child(2) {
+body table:nth-child(3) tbody tr:nth-child(8) td:nth-child(2) {
   background-color: #ECD9BB;
 }
 body .tabs a {
@@ -34497,6 +34525,9 @@ body .main-backend {
 }
 body .input-dropdown {
   border-radius: 2px !important;
+}
+body table:nth-child(5) tbody tr td:nth-child(2) {
+  text-align: center;
 }
 body .icon-position {
   margin-right: 2px;

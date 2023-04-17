@@ -64,32 +64,29 @@ body{
       font-size: 18px;
       line-height: 30px;
 
-      /* 
-         Table text
-      */
-      &.body-bold{
-         font-weight: 700;
-         font-size: 18px;
-         line-height: 28px;
-      }
-      
-      &.body-small{
-         font-weight: 400;
-         font-size: 16px;
-         line-height: 26px;
-      }
-      
-      &.body-small-bold{
-         font-weight: 700;
-         font-size: 16px;
-         line-height: 26px;
-      }
-      
-      &.body-extra-small{
-         font-weight: 400;
-         font-size: 12px;
-         line-height: 22px;
-      }
+   &.body-bold{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+   }
+
+   &.body-small{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+   }
+
+   &.body-small-bold{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+   }
+
+   &.body-extra-small{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 22px;
+   }
    }
 
    a{
@@ -195,6 +192,33 @@ body{
    .product-info{
       font-size: 18px !important;
       line-height: 28px !important;
+   }
+
+   .backend-subtitle{
+      font-weight: 700 !important;
+      font-size: 18px !important;
+      line-height: 21px !important;
+      color: #121212 !important;
+   }
+
+   .backend-table-column-label{
+      font-weight: 700 !important;
+      font-size: 14px !important;
+      line-height: 14px !important;
+      color: #333333 !important;
+   }
+   .backend-table-customer-name{
+      font-weight: 700 !important;
+      font-size: 16px !important;
+      line-height: 26px !important;
+      text-decoration: underline !important;
+      color: #121212 !important;
+   }
+   .backend-table-content{
+      font-weight: 400 !important;
+      font-size: 16px !important;
+      line-height: 26px !important;
+      color: #212529 !important;
    }
 
    /* 
@@ -315,8 +339,13 @@ body{
    /* 
       Table buttons
    */
+   // position buttons
+   table:nth-child(3) tbody tr td:nth-child(2){
+      text-align: center;
+   }
+
    // menu frontend primary button
-   table:nth-child(3) tbody tr:nth-child(4) td:nth-child(2){
+   table:nth-child(3) tbody tr:nth-child(5) td:nth-child(2){
       background-color: $table_background_special;
    }
 
@@ -327,7 +356,7 @@ body{
    //menu frontend secondary button
 
    // menu backend primary button
-   table:nth-child(3) tbody tr:nth-child(6) td:nth-child(2){
+   table:nth-child(3) tbody tr:nth-child(7) td:nth-child(2){
       background-color: $table_background_special;
    }
 
@@ -336,7 +365,7 @@ body{
    }
 
    //menu backend secondary button
-   table:nth-child(3) tbody tr:nth-child(7) td:nth-child(2){
+   table:nth-child(3) tbody tr:nth-child(8) td:nth-child(2){
       background-color: $table_background_special;
    }
    .tabs a{
@@ -353,6 +382,14 @@ body{
    */
    .input-dropdown{
       border-radius: 2px !important;
+   }
+
+   /* 
+      Table Selections
+   */
+   // position selections
+   table:nth-child(5) tbody tr td:nth-child(2){
+      text-align: center;
    }
 
    /* 
