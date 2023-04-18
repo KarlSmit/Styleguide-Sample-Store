@@ -30,14 +30,185 @@
                 <tr><th colspan="3">Text</th></tr>
             </thead>
             <tbody>
-                <!-- Pallete colors for the primary color -->
+                <!-- Primary font -->
                 <tr>
                     <td>Primary font</td>
                     <td>
-                        
+                        <p>Welcome to Sample Store</p>
                     </td>
                     <td>
-
+                        <p>
+                            font-family: DM Sans;<br>
+                            font-weight: 400px <br>
+                            color: $primary-tint-1;
+                        </p>
+                    </td>                                               
+                </tr>
+                <!-- Heading 1 -->
+                <tr>
+                    <td>Heading 1</td>
+                    <td>
+                        <h1>Heading 1</h1>
+                    </td>
+                    <td>
+                        <p>
+                            class: "primary-font"<br>
+                            font-size: 44px;<br>
+                            <!-- font-weight: 700;<br> -->
+                            <!-- line-height: 48px; -->
+                        </p>
+                    </td>                                               
+                </tr>
+                <!-- Heading 2 -->
+                <tr>
+                    <td>Heading 2</td>
+                    <td>
+                        <h2>Heading 2</h2>
+                    </td>
+                    <td>
+                        <p>
+                            class: "primary-font"<br>
+                            font-size: 32px;<br>
+                            <!-- font-weight: 700;<br> -->
+                            <!-- line-height: 48px; -->
+                        </p>
+                    </td>                                               
+                </tr>
+                <!-- Heading 3 -->
+                <tr>
+                    <td>Heading 3</td>
+                    <td>
+                        <h3>Heading 3</h3>
+                    </td>
+                    <td>
+                        <p>
+                            class: "primary-font"<br>
+                            font-size: 22px;<br>
+                            <!-- font-weight: 700;<br> -->
+                            <!-- line-height: 48px; -->
+                        </p>
+                    </td>                                               
+                </tr>
+                <!-- Heading 4 -->
+                <tr>
+                    <td>Heading 4</td>
+                    <td>
+                        <h4>Heading 4</h4>
+                    </td>
+                    <td>
+                        <p>
+                            class: "primary-font"<br>
+                            font-size: 18px;<br>
+                            <!-- font-weight: 400;<br> -->
+                            <!-- line-height: 26px; -->
+                        </p>
+                    </td>                                               
+                </tr>
+                <!-- Heading 5 -->
+                <tr>
+                    <td>Heading 5</td>
+                    <td>
+                        <h5>Heading 5</h5>
+                    </td>
+                    <td>
+                        <p>
+                            class: "primary-font"<br>
+                            font-size: 16px;<br>
+                            <!-- font-weight: 400;<br> -->
+                            <!-- line-height: 26px; -->
+                        </p>
+                    </td>                                               
+                </tr>
+                <!-- Heading 6 -->
+                <tr>
+                    <td>Heading 6</td>
+                    <td>
+                        <h6>Heading 6</h6>
+                    </td>
+                    <td>
+                        <p>
+                            class: "primary-font"<br>
+                            font-size: 12px;<br>
+                            <!-- font-weight: 400;<br> -->
+                            <!-- line-height: 22px; -->
+                        </p>
+                    </td>                                               
+                </tr>
+                <!-- Body text -->
+                <tr>
+                    <td>Body text</td>
+                    <td>
+                        <h4>Body text</h4>
+                    </td>
+                    <td>
+                        <p>
+                            class: "primary-font"<br>
+                            font-size: 18px;<br>
+                            <!-- font-weight: 400;<br> -->
+                            <!-- line-height: 26px; -->
+                        </p>
+                    </td>                                               
+                </tr>
+                <!-- Fontweight normal -->
+                <tr>
+                    <td>Fontweight normal</td>
+                    <td>
+                        <p class="body-normal">Welcome to Sample Store</p>
+                    </td>
+                    <td>
+                        <p>font-weight: 400;<br> </p>
+                    </td>                                               
+                </tr>
+                <!-- Fontweight bold -->
+                <tr>
+                    <td>Fontweight bold</td>
+                    <td>
+                        <p class="body-bold">Welcome to Sample Store</p>
+                    </td>
+                    <td>
+                        <p>font-weight: 500;<br></p>
+                    </td>                                               
+                </tr>
+                <!-- Fontweight bolder -->
+                <tr>
+                    <td>Fontweight bolder</td>
+                    <td>
+                        <p class="body-bolder">Welcome to Sample Store</p>
+                    </td>
+                    <td>
+                        <p>font-weight: 700;<br></p>
+                    </td>                                               
+                </tr>
+                <!-- Link text -->
+                <tr>
+                    <td>Link text</td>
+                    <td>
+                        <p class="body-link">Welcome to Sample Store</p>
+                    </td>
+                    <td>
+                        <p>
+                            :hover { color: $primary-tint-3; cursor: pointer; }
+                        </p>
+                    </td>                                               
+                </tr>
+                <!-- Underline text -->
+                <tr>
+                    <td>Underline text</td>
+                    <td>
+                        <p class="body-underline">Welcome to Sample Store</p>
+                    </td>
+                    <td>
+                        <p>text-decoration: underline;<br></p>
+                    </td>                                               
+                </tr>
+                <!-- Cursief text -->
+                <tr>
+                    <td>Cursief text</td>
+                    <td>
+                        <p class="body-italic">Welcome to Sample Store</p>
+                    </td>
+                    <td>
+                        <p>font-style: italic;<br></p>
                     </td>                                               
                 </tr>
             </tbody>
@@ -53,91 +224,102 @@
                  <tr>
                     <td>Primary</td>
                     <td>
-                        <div class="secondary-lightest">secondary-lightest</div>
-                        <div class="secondary-lighter">secondary-lighter</div>
-                        <div class="secondary-basis">secondary-basis</div>
-                        <div class="secondary-darker">secondary-darker</div>
-                        <div class="secondary-darkest">secondary-darkest</div>
+                        <div class="primary-darkest">primary-darkest</div>
+                        <div class="primary-darker">primary-darker</div>
+                        <div class="primary-basis">primary-basis</div>
+                        <div class="primary-lighter">primary-lighter</div>
+                        <div class="primary-lightest">primary-lightest</div>
                     </td>
                     <td>
-                        <p>Tint 1: #ECD9BB;, opacity: 20%;<br></p>
-                        <p>Tint 2: #ECD9BB;, opacity: 40%;<br></p>
-                        <p>Tint 3: #ECD9BB;, opacity: 60%;<br></p>
-                        <p>Tint 4: #ECD9BB;, opacity: 80%;<br></p>
-                        <p>Tint 5: #ECD9BB;, opacity: 100%;<br></p>
+                        <p>Tint 1: #000000;<br></p>
+                        <p>Tint 2: #4D4D4D;<br></p>
+                        <p>Tint 3: #808080;<br></p>
+                        <p>Tint 4: #B3B3B3;<br></p>
+                        <p>Tint 5: #F4F4F4;<br></p>
                     </td>
                 </tr>
                 <!-- Pallete colors for the secondary color -->
                 <tr>
                     <td>Secondary</td>
                     <td>
-                        <div class="primary-lightest">primary-lightest</div>
-                        <div class="primary-lighter">primary-lighter</div>
-                        <div class="primary-basis">primary-basis</div>
-                        <div class="primary-darker">primary-darker</div>
-                        <div class="primary-darkest">primary-darkest</div>
+                        <div class="secondary-darkest">secondary-darkest</div>
+                        <div class="secondary-darker">secondary-darker</div>
+                        <div class="secondary-basis">secondary-basis</div>
+                        <div class="secondary-lighter">secondary-lighter</div>
+                        <div class="secondary-lightest">secondary-lightest</div>
                     </td>
                     <td>
-                        <p>Tint 1: #ECD9BB;<br></p>
-                        <p>Tint 2: #DBC195;<br></p>
+                        <p><b>Tint 1: #7A5921;</b><br></p>
+                        <p><b>Tint 2: #A48043;</b><br></p>
                         <p>Tint 3: #B79B6C;<br></p>
-                        <p>Tint 4: #A48043;<br></p>
-                        <p>Tint 5: #7A5921;<br></p>
+                        <p>Tint 4: #DBC195;<br></p>
+                        <p><b>Tint 5: #ECD9BB;</b><br></p>
                     </td>                                               
                 </tr>
-               
+                <!-- Pallete colors for the secondary extra colors -->
+                <tr>
+                    <td>Secondary Extra</td>
+                    <td>
+                        <div class="secondary-extra-1">secondary-extra-1</div>
+                        <div class="secondary-extra-2">secondary-extra-2</div>
+                    </td>
+                    <td>
+                        <p>Tint 1: #B49764;<br></p>
+                        <p>Tint 2: #ab8f54;<br></p>
+                    </td>                                               
+                </tr>               
                 <!-- Pallete colors for warnings -->
                 <tr>
                     <td>Warning</td>
                     <td>
-                        <div class="warning-lightest">warning-lightest</div>
-                        <div class="warning-lighter">warning-lighter</div>
-                        <div class="warning-basis">warning-basis</div>
-                        <div class="warning-darker">warning-darker</div>
                         <div class="warning-darkest">warning-darkest</div>
+                        <div class="warning-darker">warning-darker</div>
+                        <div class="warning-basis">warning-basis</div>
+                        <div class="warning-lighter">warning-lighter</div>
+                        <div class="warning-lightest">warning-lightest</div>
                     </td>
                     <td>
-                        <p>Tint 1: #FCF5CF;<br></p>
-                        <p>Tint 2: #F6E06F;<br></p>
+                        <p>Tint 1: #907A09;<br></p>
+                        <p>Tint 2: #C0A30C;<br></p>
                         <p>Tint 3: #F0CC0F;<br></p>
-                        <p>Tint 4: #C0A30C;<br></p>
-                        <p>Tint 5: #907A09;<br></p>
+                        <p>Tint 4: #F6E06F;<br></p>
+                        <p>Tint 5: #FCF5CF;<br></p>
                     </td>                                               
                 </tr>
                 <!-- Pallete colors for errors -->
                 <tr>
                     <td>Error</td>
                     <td>
-                        <div class="error-lightest">error-lightest</div>
-                        <div class="error-lighter">error-lighter</div>
-                        <div class="error-basis">error-basis</div>
-                        <div class="error-darker">error-darker</div>
                         <div class="error-darkest">error-darkest</div>
+                        <div class="error-darker">error-darker</div>
+                        <div class="error-basis">error-basis</div>
+                        <div class="error-lighter">error-lighter</div>
+                        <div class="error-lightest">error-lightest</div>
                     </td>
                     <td>
-                        <p>Tint 1: #F7D4D4;<br></p>
-                        <p>Tint 2: #E87D7D;<br></p>
+                        <p>Tint 1: #821717;<br></p>
+                        <p>Tint 2: #AE1E1E;<br></p>
                         <p>Tint 3: #D92626;<br></p>
-                        <p>Tint 4: #AE1E1E;<br></p>
-                        <p>Tint 5: #821717;<br></p>
+                        <p>Tint 4: #E87D7D;<br></p>
+                        <p>Tint 5: #F7D4D4;<br></p>
                     </td>
                 </tr>
                 <!-- Pallete colors for succes messages -->
                 <tr>
                     <td>Succes</td>
                     <td>
-                        <div class="succes-lightest">succes-lightest</div>
-                        <div class="succes-lighter">succes-lighter</div>
-                        <div class="succes-basis">succes-basis</div>
-                        <div class="succes-darker">succes-darker</div>
                         <div class="succes-darkest">succes-darkest</div>
+                        <div class="succes-darker">succes-darker</div>
+                        <div class="succes-basis">succes-basis</div>
+                        <div class="succes-lighter">succes-lighter</div>
+                        <div class="succes-lightest">succes-lightest</div>
                     </td>
                     <td>
-                        <p>Tint 1: #D9F7D4;<br></p>
-                        <p>Tint 2: #8CE87D;<br></p>
+                        <p>Tint 1: #268217;<br></p>
+                        <p>Tint 2: #32AE1E;<br></p>
                         <p>Tint 3: #3FD926;<br></p>
-                        <p>Tint 4: #32AE1E;<br></p>
-                        <p>Tint 5: #268217;<br></p>
+                        <p>Tint 4: #8CE87D;<br></p>
+                        <p>Tint 5: #D9F7D4;<br></p>
                     </td>
                 </tr>
             </tbody>
@@ -155,18 +337,16 @@
                     </td>
                     <td class="info-row-position">
                         <p class="info-col-1">
-                            font-weight: 500;
-                            font-style: normal;<br>
-                            font-size: 18px;<br>
+                            Heading 4<br>
+                            class: "fontweight-bold"<br>
                             line-height: 30px;<br>
                             padding: 7px 11px 7px 11px;<br>
                         </p>
                         <p>
-                            background-color: #000;<br>
-                            color: #fff;<br>
+                            background-color: $primary-tint-1;<br>
+                            color: white;<br>
                             border: none;<br>
-                            hover: background-color: #b49764;<br>
-                            hover: cursor: pointer;<br>
+                            :hover { background-color: #b49764;<br> cursor: pointer; }
                         </p>
                     </td>  
                 </tr>
@@ -179,18 +359,15 @@
                     </td>
                     <td class="info-row-position">
                         <p class="info-col-1">
-                            font-weight: 400;
-                            font-style: normal;<br>
-                            font-size: 16px;<br>
+                            Heading 5<br>
                             line-height: 24px;<br>
                             padding: 7px 11px 7px 11px;<br>
                         </p>
                         <p>
                             background-color: #b49764;<br>
-                            color: #ffffff;<br>
+                            color: white;<br>
                             border: none;<br>
-                            hover: background-color: #ab8f54;<br>
-                            hover: cursor: pointer;<br>
+                            :hover { background-color: #ab8f54;<br> cursor: pointer;}
                         </p>
                     </td>                                               
                 </tr>
@@ -201,18 +378,15 @@
                     </td>
                     <td class="info-row-position">
                         <p class="info-col-1">
-                            font-weight: 400;
-                            font-style: normal;<br>
-                            font-size: 16px;<br>
+                            Heading 5<br>
                             line-height: 24px;<br>
                             padding: 7px 11px 7px 11px;<br>
                         </p>
                         <p>
-                            background-color: #fff;<br>
+                            background-color: white;<br>
                             color: #b49764;<br>
                             border: 1px solid #b49764;<br>
-                            hover: background-color: #fdfbfbf8;<br>
-                            hover: cursor: pointer;<br>
+                            :hover { background-color: #fdfbfbf8;<br> cursor: pointer; }
                         </p>
                     </td>  
                 </tr>
@@ -230,18 +404,15 @@
                     </td>
                     <td class="info-row-position">
                         <p class="info-col-1">
-                            font-weight: 400;
-                            font-style: normal;<br>
-                            font-size: 16px;<br>
+                            Heading 5<br>
                             line-height: 24px;<br>
                             padding: 7px 11px 7px 11px;<br>
                         </p>
                         <p>
-                            background-color: #fff;<br>
+                            background-color: white;<br>
                             color: #b49764;<br>
                             border: 1px solid #b49764;<br>
-                            hover: background-color: #fdfbfbf8;<br>
-                            hover: cursor: pointer;<br>
+                            :hover { background-color: #fdfbfbf8;<br> cursor: pointer; }
                         </p>
                     </td>  
                 </tr>
@@ -289,11 +460,10 @@
                         </div>
                         <div class="main-frontend z-n1 w-100 bg-white"></div>
                     </td>
-                    <td class="info-row-position">
+                    <td>
                         <p>
-                            font-size: 18px;<br>
+                            Heading 4<br>
                             line-height: 30px;<br>
-                            font-weight: 400;<br>
                         </p>
                     </td>  
                 </tr>
@@ -347,9 +517,8 @@
                     </td>
                     <td>
                         <p>
-                            font-size: 16px;<br>
+                            Heading 5<br>
                             line-height: 26px;<br>
-                            font-weight: 400;<br>
                         </p>
                     </td>
                 </tr>
@@ -376,9 +545,8 @@
                     </td>
                     <td>
                         <p>
-                            font-size: 16px;<br>
+                            Heading 5<br>
                             line-height: 26px;<br>
-                            font-weight: 400;<br>
                         </p>
                     </td>
                 </tr>
@@ -394,14 +562,14 @@
                 <tr>
                     <td>Input</td>
                     <td>
-                        <input type="text" wire:model.debounce.250ms="search" class="form-control" placeholder="Zoek in de producten">
+                        <input type="text" wire:model.debounce.250ms="search" class="form-control input-radius" placeholder="Zoek in de producten">
                     </td>
                     <td></td> 
                 </tr>
                 <tr>
-                    <td>Input</td>
+                    <td>Input error</td>
                     <td>
-                        <input class="mt-1 form-control bg-white is-invalid" id="team_name" type="text" maxlength="50" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" wire:model="team.name">
+                        <input class="mt-1 form-control bg-white is-invalid input-radius" id="team_name" type="text" maxlength="50" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" wire:model="team.name">
                         <span class="invalid-feedback d-block mt-2" role="alert">
                             <strong>Dit veld is verplicht</strong>
                         </span>
@@ -412,7 +580,7 @@
                     <td>Input readonly</td>
                     <td>
                         <div class="d-flex flex-column">
-                            <select id="brand_id" wire_model="" wire:model="data.brand_id" disabled="disabled" class="bg-white mt-1 form-select ">
+                            <select id="brand_id" wire_model="" wire:model="data.brand_id" disabled="disabled" class="bg-white mt-1 form-select input-radius">
                                 <option value="33">AkoCell B.V.</option>
                             </select>
                         </div>
@@ -422,7 +590,7 @@
                 <tr>
                     <td>Input dropdown supliers</td>
                     <td>
-                        <div class="input-dropdown">
+                        <div class="input-radius">
                             <div class="d-flex w-100 product_item-supplier_picker">
                                 <div class="d-flex justify-content-center flex-1">
                                     <div x-data="
@@ -449,7 +617,7 @@
                                         }" 
                                     x-on:keydown.escape.prevent.stop="close($refs.button)" x-on:focusin.window="! $refs.panel.contains($event.target) &amp;&amp; close()" x-id="['dropdown-button']" class="position-relative w-100">
                                     <!-- Button -->
-                                    <button x-ref="button" x-on:click="toggle()" :aria-expanded="open" :aria-controls="$id('dropdown-button')" type="button" :class="{'not-selected': !selectedSupplier}" class="input-dropdown product_item-supplier_picker-button d-flex align-items-center justify-content-between not-selected" aria-controls="dropdown-button-1">
+                                    <button x-ref="button" x-on:click="toggle()" :aria-expanded="open" :aria-controls="$id('dropdown-button')" type="button" :class="{'not-selected': !selectedSupplier}" class="input-radius product_item-supplier_picker-button d-flex align-items-center justify-content-between not-selected" aria-controls="dropdown-button-1">
                                         <p class="mb-0" x-show="!selectedSupplier">Selecteer leverancier</p>
                                         <p class="mb-0" x-show="selectedSupplier" x-text="selectedSupplier?.name" style="display: none;"></p>
                                         
@@ -542,7 +710,7 @@
                     <td>Input dropdown standard</td>
                     <td>
                         <div class="d-flex flex-column">
-                            <select id="indoor_outdoor" wire_model="" wire:model="data.indoor_outdoor" class="bg-white mt-1 form-select ">
+                            <select id="indoor_outdoor" wire_model="" wire:model="data.indoor_outdoor" class="bg-white mt-1 form-select input-radius">
                                 <option value="" disabled="">Kies</option>
                                 <option value="indoor">Binnen</option>
                                 <option value="outdoor">Buiten</option>
@@ -556,7 +724,7 @@
                     <td>Input dropdown with categories</td>
                     <td>
                         <div class="multiselect position-relative bg-white" style="z-index: 35" @click.outside="closeAndRest()" x-data="multiselect_materials()">
-                            <div class="mt-1 form-control bg-white multiselectinput" @click.prevent="openSelect = !openSelect">
+                            <div class="mt-1 form-control bg-white multiselectinput input-radius" @click.prevent="openSelect = !openSelect">
                                 <ul class="multiselect-list">
                                     <template x-for="select in selected">
                                         <li class="multiselect-list-item">
@@ -594,7 +762,7 @@
                 <tr>
                     <td>Textarea</td>
                     <td>
-                        <textarea id="product_text" wire_model="" wire:model.defer="data.text.nl" x-ref="countme" maxlength="5000" x-on:keyup="count = $refs.countme.value.length" class="form-control bg-white mt-1 " rows="5"></textarea>
+                        <textarea id="product_text" wire_model="" wire:model.defer="data.text.nl" x-ref="countme" maxlength="5000" x-on:keyup="count = $refs.countme.value.length" class="form-control bg-white mt-1 input-radius" rows="5"></textarea>
                     </td>
                     <td></td>                                               
                 </tr>
@@ -745,9 +913,7 @@
                     </td>
                     <td>
                         <p>
-                            font-size: 16px;<br>
-                            line-height: 26px;<br>
-                            font-weight: 400;<br>
+                            Heading 5<br>
                         </p>
                     </td>                                               
                 </tr>
@@ -789,9 +955,8 @@
                     </td>
                     <td>
                         <p>
-                            font-size: 16px;<br>
+                            Heading 5<br>
                             line-height: 20px;<br>
-                            font-weight: 400;<br>
                         </p>
                     </td>                                               
                 </tr>
@@ -811,9 +976,9 @@
                     </td>
                     <td>
                         <p>
-                            font-size: 22px;<br>
+                            Heading 3<br>
+                            class: "fontweight-bolder"<br>
                             line-height: 28px;<br>
-                            font-weight: 700;<br>
                         </p>
                     </td>                                               
                 </tr>
@@ -835,9 +1000,9 @@
                     </td>
                     <td>
                         <p>
-                            font-size: 18px;<br>
+                            Heading 4<br>
+                            class: "fontweight-bolder"<br>
                             line-height: 22px;<br>
-                            font-weight: 700;<br>
                         </p>
                     </td>                                               
                 </tr>
@@ -859,9 +1024,9 @@
                     </td>
                     <td>
                         <p>
-                            font-size: 18px;<br>
+                            Heading 4<br>
+                            class: "fontweight-bold"<br>
                             line-height: 22px;<br>
-                            font-weight: 500;<br>
                         </p>
                     </td>                                               
                 </tr>
@@ -887,9 +1052,8 @@
                     </td>
                     <td>
                         <p>
-                            font-size: 16px;<br>
+                            Heading 5<br>
                             line-height: 26px;<br>
-                            font-weight: 400;<br>
                         </p>
                     </td>                                               
                 </tr>
@@ -1078,9 +1242,7 @@
                     <td><p class="filter-level-2 no-hover">Afmeting Sample</p></td>
                     <td>
                         <p>    
-                            font-size: 18px;<br>
-                            line-height: 22px;<br>
-                            font-weight: 400;<br>
+                            Heading 4<br>
                         </p>
                     </td>                                               
                     </tr>
@@ -1094,9 +1256,7 @@
                     </td>
                     <td>
                         <p>
-                            font-size: 12px;<br>
-                            line-height: 16px;<br>
-                            font-weight: 400;<br>
+                            Heading 6<br>
                         </p>
                     </td>
                 </tr>
@@ -1134,19 +1294,18 @@
                     </td>
                     <td class="info-row-position">
                         <p class="info-col-1">
-                            .breadcrumb-item{<br>
+                            Heading 5<br>
+                            .breadcrumb-item {<br>
                                 font-weight: 500;<br>
-                                font-size: 16px;<br>
                                 line-height: 26px;<br>
                                 :hover {color: $secondary-tint-3;}
                                 }<br>
                         </p>
                         <p>
-                            .active{<br>
+                            <br>.active{<br>
                                 font-weight: 400;<br>
-                                font-size: 16px;<br>
                                 line-height: 26px;<br>
-                                color: $gray_tint_3}<br>
+                                color: $primary-tint-3}<br>
                         </p>
                     </td>                                               
                 </tr>

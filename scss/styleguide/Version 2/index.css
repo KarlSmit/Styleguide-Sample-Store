@@ -6399,8 +6399,7 @@ textarea.form-control-lg {
   float: left;
   width: 100%;
   margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -26781,8 +26780,7 @@ textarea.form-control-lg {
   float: left;
   width: 100%;
   margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -34189,14 +34187,14 @@ input[type=number]::-webkit-inner-spin-button {
 /* 
    Variables
 */
-/* 
-   HTML elements 
-*/
 body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 25px !important;
+  /* 
+     HTML elements 
+  */
   /* 
      Table styling
   */
@@ -34230,60 +34228,45 @@ body th {
   font-size: 22px;
   line-height: 28px;
 }
+body h1, body .h1, body h2, body .h2, body h3, body .h3, body h4, body .h4, body h5, body .h5, body h6, body .h6 {
+  font-weight: 400;
+}
 body h1, body .h1 {
-  font-weight: 700;
-  font-size: 44px !important;
-  line-height: 48px !important;
+  font-size: 44px;
 }
 body h2, body .h2 {
-  font-weight: 700;
-  font-size: 44px !important;
-  line-height: 48px !important;
+  font-size: 32px;
 }
 body h3, body .h3 {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 22px;
 }
 body h4, body .h4 {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 18px;
 }
 body h5, body .h5 {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 16px;
 }
 body h6, body .h6 {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 12px;
 }
-body p {
+body p.body-normal {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
 }
 body p.body-bold {
+  font-weight: 500;
+}
+body p.body-bolder {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 28px;
 }
-body p.body-small {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+body p.body-link:hover {
+  color: #B79B6C;
+  cursor: pointer;
 }
-body p.body-small-bold {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 26px;
+body p.body-underline {
+  text-decoration: underline;
 }
-body p.body-extra-small {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 22px;
+body p.body-italic {
+  font-style: italic;
 }
 body a {
   text-decoration: none;
@@ -34350,49 +34333,6 @@ body .info-row-position {
 body .info-row-position p.info-col-1 {
   width: 50%;
 }
-body a.product_overview_item-image-wrapper-supplier-name {
-  font-size: 22px;
-  line-height: 24px;
-  font-size: 1.375rem;
-  line-height: 1.5rem;
-  color: #000000;
-  display: block;
-  margin-top: 4px;
-  font-weight: 700;
-  text-decoration: underline;
-}
-body a.product_overview_item-image-wrapper-supplier-name:hover {
-  color: #B79B6C;
-}
-body .product-info {
-  font-size: 18px !important;
-  line-height: 28px !important;
-}
-body .backend-subtitle {
-  font-weight: 700 !important;
-  font-size: 18px !important;
-  line-height: 21px !important;
-  color: #121212 !important;
-}
-body .backend-table-column-label {
-  font-weight: 700 !important;
-  font-size: 14px !important;
-  line-height: 14px !important;
-  color: #333333 !important;
-}
-body .backend-table-customer-name {
-  font-weight: 700 !important;
-  font-size: 16px !important;
-  line-height: 26px !important;
-  text-decoration: underline !important;
-  color: #121212 !important;
-}
-body .backend-table-content {
-  font-weight: 400 !important;
-  font-size: 16px !important;
-  line-height: 26px !important;
-  color: #212529 !important;
-}
 body table:nth-child(2) tbody tr td:nth-child(2) div {
   padding: 10px 0 0 10px;
   color: transparent;
@@ -34404,39 +34344,40 @@ body table:nth-child(2) tbody tr td:nth-child(2) div {
   /* succes colors */
 }
 body table:nth-child(2) tbody tr td:nth-child(2) div.primary-lightest {
-  background: #ECD9BB;
+  background-color: #F4F4F4;
 }
 body table:nth-child(2) tbody tr td:nth-child(2) div.primary-lighter {
-  background-color: #DBC195;
+  background-color: #B3B3B3;
 }
 body table:nth-child(2) tbody tr td:nth-child(2) div.primary-basis {
-  background-color: #B79B6C;
+  background-color: #808080;
 }
 body table:nth-child(2) tbody tr td:nth-child(2) div.primary-darker {
-  background-color: #A48043;
+  background-color: #4D4D4D;
 }
 body table:nth-child(2) tbody tr td:nth-child(2) div.primary-darkest {
-  background-color: #7A5921;
+  background-color: black;
 }
 body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-lightest {
-  background-color: black;
-  opacity: 20%;
+  background: #ECD9BB;
 }
 body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-lighter {
-  background-color: black;
-  opacity: 40%;
+  background-color: #DBC195;
 }
 body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-basis {
-  background-color: black;
-  opacity: 60%;
+  background-color: #B79B6C;
 }
 body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-darker {
-  background-color: black;
-  opacity: 80%;
+  background-color: #A48043;
 }
 body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-darkest {
-  background-color: black;
-  opacity: 100%;
+  background-color: #7A5921;
+}
+body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-extra-1 {
+  background-color: #B49764;
+}
+body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-extra-2 {
+  background-color: #ab8f54;
 }
 body table:nth-child(2) tbody tr td:nth-child(2) div.warning-lightest {
   background-color: #FCF5CF;
@@ -34523,7 +34464,7 @@ body .main-backend {
   background-color: #fafafa;
   height: 24px;
 }
-body .input-dropdown {
+body .input-radius {
   border-radius: 2px !important;
 }
 body table:nth-child(5) tbody tr td:nth-child(2) {
@@ -34531,6 +34472,9 @@ body table:nth-child(5) tbody tr td:nth-child(2) {
 }
 body .icon-position {
   margin-right: 2px;
+}
+body .filter-level-2:hover {
+  color: black !important;
 }
 body .breadcrumb-item::before {
   padding-right: 10px !important;
