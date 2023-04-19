@@ -29,42 +29,44 @@ body{
    
    h1{
       font-size: 44px;
-      // line-height: 48px;
+      line-height: 48px;
    }
    
    h2{
       font-size: 32px;
-      // line-height: 38px;
+      line-height: 38px;
    }
    
    h3{
       font-size: 22px;
-      // line-height: 28px;
+      line-height: 28px;
    }
    
    h4{
       font-size: 18px;
-      // line-height: 26px;
+      line-height: 28px;
    }
    
    h5{
       font-size: 16px;
-      // line-height: 26px;
+      line-height: 26px;
    }
    
    h6{
       font-size: 12px;
-      // line-height: 22px;
+      line-height: 22px;
    }
    
    p{
-      &.body-normal{
+      line-height: 28px;
+      
+      &.body-regular{
          font-weight: 400;
       }
-      &.body-bold{
+      &.body-medium{
          font-weight: 500;
       }
-      &.body-bolder{
+      &.body-bold{
          font-weight: 700;
       }
       &.body-link{
@@ -84,8 +86,6 @@ body{
    a{
       text-decoration: none;
       color: black;
-      font-size: 16px;
-      line-height: 26px;
    }
     
    /* 
@@ -168,6 +168,9 @@ body{
    /* 
       Table Text
    */
+   table:nth-child(1) tbody tr td:nth-child(2) p, h1, h2, h3, h4, h5, h6{
+      margin-bottom: 0px !important;
+   }
 
    /* 
       Table colors
@@ -193,8 +196,8 @@ body{
          background-color: black;
       }
 
-       /* secondary colors */
-       &.secondary-lightest{
+      /* secondary colors */
+      &.secondary-lightest{
          background: $secondary_tint_1;
       }
       &.secondary-lighter{
@@ -293,8 +296,27 @@ body{
       text-align: center;
    }
 
-   // menu frontend primary button
-   table:nth-child(3) tbody tr:nth-child(5) td:nth-child(2){
+   //  primary button
+   .btn-black{
+      &:hover{
+         cursor: pointer;
+      }
+   }
+
+   //  secondary button
+   .btn-white{
+      border-color: black;
+      color: black;
+
+      &:hover{
+         border-color: black;
+         color: black;
+         background-color: $gray_tint_1;
+      }
+   }
+
+   // menu frontend header button
+   table:nth-child(3) tbody tr:nth-child(4) td:nth-child(2){
       background-color: $table_background_special;
    }
 
@@ -302,19 +324,42 @@ body{
       height: 40px;
    }
 
-   //menu frontend secondary button
+   //menu frontend subheader button
 
-   // menu backend primary button
-   table:nth-child(3) tbody tr:nth-child(7) td:nth-child(2){
+   // menu backend header button
+   table:nth-child(3) tbody tr:nth-child(6) td:nth-child(2){
       background-color: $table_background_special;
+   }
+
+   .navbar{
+      width: 100%;
+
+      ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+ 
+         li {
+             a {
+                 padding: 10px 14px 5px 14px !important;
+                 margin-bottom: 5px;
+                 display: inline-block;
+                 border-bottom: 2px solid black;
+ 
+                 &.nav-active, &:not(.tab-disabled):hover {
+                     border-color: white;
+                 }
+             }
+         }
+     }
    }
 
    .section-under-navbar{
       height: 40px;
    }
 
-   //menu backend secondary button
-   table:nth-child(3) tbody tr:nth-child(8) td:nth-child(2){
+   //menu backend subheader button
+   table:nth-child(3) tbody tr:nth-child(7) td:nth-child(2){
       background-color: $table_background_special;
    }
    .tabs a{
@@ -344,13 +389,23 @@ body{
    /* 
       Table Search filter
    */
+   .activeFilter{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      
+      :hover{
+         color: white !important;
+         background-color: black !important;
+      }
+   }
+
    .icon-position{
       margin-right: 2px;
    }
-   .filter-level-2{
-      &:hover{
-         color: black !important
-      }
+
+   .filter-selected, .selected{
+      font-weight: 700 !important;
    }
 
    /* 
@@ -365,10 +420,27 @@ body{
    /* 
       Navigation
    */
-   // Page results
-   .page-results{
+
+   /* 
+      Notifications/Response messages
+   */
+   table:nth-child(9) tbody tr td:nth-child(2){
+      text-align: center;
       font-size: 18px;
-      line-height: 26px;
-      font-weight: 400;
+      line-height: 28px;
+      font-weight: 500;
+
+      &.succes-messages{
+         background-color: #D9F7D4;
+         color: #268217;
+      }
+      &.warning-messages{
+         background-color: #FCF5CF;
+         color: #907A09;
+      }
+      &.error-messages{
+         background-color: #F7D4D4;
+         color: #821717;
+      }
    }
 }
