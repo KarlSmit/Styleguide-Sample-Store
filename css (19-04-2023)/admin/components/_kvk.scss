@@ -1,0 +1,29 @@
+.kvk_popup {
+    border: 1px solid #ced4da;
+    max-height: 400px;
+    min-width: 300px;
+    background-color: white;
+    border-top: 0;
+    overflow-y: scroll;
+
+    .kvk_popup_item {
+        padding: 15px;
+        display: block;
+        border-bottom: 1px solid #ced4da;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $blue;
+            color: white;
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 0.875rem;
+        }
+    }
+}

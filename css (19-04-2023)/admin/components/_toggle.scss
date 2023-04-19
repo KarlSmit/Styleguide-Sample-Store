@@ -1,0 +1,38 @@
+.toggle {
+    margin-left: 10px;
+    position: relative;
+    width: 3rem;
+    display: inline-flex;
+    border-radius: 9999px;
+
+    background-color: white;
+    border: 2px solid $blue;
+
+    &.active {
+        background-color: $blue;
+    }
+
+    .toggler {
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 9999px;
+        background-color: $blue;
+        transform: translateX(0.25rem);
+
+        &.active {
+            background-color: white;
+            transform: translateX(1.25rem);
+        }
+    }
+
+    &.toggle-disabled {
+        background-color: #d3d3d3;
+        border-color: #d3d3d3;
+    }
+}
+
+.transition {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}

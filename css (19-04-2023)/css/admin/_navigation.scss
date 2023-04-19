@@ -1,0 +1,28 @@
+.navbar {
+    background-color: $navigationColor;
+
+    .nav-item {
+        .nav-link {
+            color: white;
+            font-size: 1rem;
+        }
+    }
+}
+
+.breadcrumb {
+    .breadcrumb-item {
+        a {
+            font-size: 1rem;
+            text-decoration: none;
+
+            &:not(.active):hover {
+                color: #121212;
+                text-decoration: underline;
+            }
+        }
+        &.active {
+            font-weight: 600;
+            color: #121212;
+        }
+    }
+}

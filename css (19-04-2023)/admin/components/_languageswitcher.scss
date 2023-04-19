@@ -1,0 +1,15 @@
+.languageswitcher {
+    width: 45px;
+    cursor: pointer;
+
+    .languageoptions {
+        width: auto;
+        border-width: 2px;
+        z-index: 100;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+        }
+    }
+}
