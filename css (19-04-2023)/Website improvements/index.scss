@@ -1,0 +1,446 @@
+@import '../../app.scss';
+@import '../../admin.scss';
+
+/* 
+   Variables
+*/
+$table_background: #dfe5e1;
+$table_background_special: #ECD9BB;
+$dark-green: #024913;
+
+body{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-left: 25px !important;
+   
+   /* 
+      HTML elements 
+   */
+   th{
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+   }
+
+   h1, h2, h3, h4, h5, h6{
+      font-weight: 400;
+   }
+   
+   h1{
+      font-size: 44px;
+      line-height: 48px;
+   }
+   
+   h2{
+      font-size: 32px;
+      line-height: 38px;
+   }
+   
+   h3{
+      font-size: 22px;
+      line-height: 28px;
+   }
+   
+   h4{
+      font-size: 18px;
+      line-height: 28px;
+   }
+   
+   h5{
+      font-size: 16px;
+      line-height: 26px;
+   }
+   
+   h6{
+      font-size: 12px;
+      line-height: 22px;
+   }
+   
+   p{
+      line-height: 28px;
+      
+      &.body-regular{
+         font-weight: 400;
+      }
+      &.body-medium{
+         font-weight: 500;
+      }
+      &.body-bold{
+         font-weight: 700;
+      }
+      &.body-link{
+         &:hover{
+            color: $secondary_tint_3;
+            cursor: pointer;
+         }
+      }
+      &.body-underline{
+         text-decoration: underline;
+      }
+      &.body-italic{
+         font-style: italic;
+      }
+   }
+
+   a{
+      text-decoration: none;
+      color: black;
+   }
+    
+   /* 
+      Table styling
+   */
+   td {
+      border-right: 2px solid $dark-green;
+      width: 100px;
+   }
+
+   td:nth-child(1) {
+      width: 20%;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+   }
+
+   td+td {
+      width:35%;
+   }
+
+   td+td+td {
+      text-align: start;
+      width: 45%;
+      p{
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 30px;
+         margin-bottom: 0px;
+      }
+   }
+
+   .styled-table {
+      border-collapse: collapse;
+      margin: 25px 0;
+      width: 1450px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      border: 3px solid $dark-green;
+
+      &.styled-table thead tr {
+         background-color: $table_background;
+         color: black;
+         text-align: center;
+      }
+      
+      &.styled-table th,
+      &.styled-table td {
+         padding: 12px 15px;
+      }
+      
+      &.styled-table tbody tr {
+         border-bottom: 1px solid $table_background;
+      }
+      
+      &.styled-table tbody tr:nth-of-type(odd) {
+         background-color: white;
+      }
+      &.styled-table tbody tr:nth-of-type(even) {
+         background-color: $admingraybackground;
+      }
+      
+      &.styled-table tbody tr:first-of-type {
+         border-top: 2px solid $dark-green;
+      }
+   }
+   
+   .info-row-position{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      border-right: none;
+      
+      p{
+         &.info-col-1{
+            width: 50%;
+         }
+      }
+   }
+   
+   /* 
+      Table Text
+   */
+   table:nth-child(1) tbody tr td:nth-child(2) p, h1, h2, h3, h4, h5, h6{
+      margin-bottom: 0px !important;
+   }
+
+   /* 
+      Table colors
+   */
+   table:nth-child(2) tbody tr td:nth-child(2) div{
+      padding: 10px 0 0 10px;
+      color: transparent;
+
+      /* primary colors */
+      &.primary-lightest{
+         background-color: $gray_tint_1;
+      }
+      &.primary-lighter{
+         background-color: $gray_tint_2;
+      }
+      &.primary-basis{
+         background-color: $gray_tint_3;
+      }
+      &.primary-darker{
+         background-color: $gray_tint_5;
+      }
+      &.primary-darkest{
+         background-color: black;
+      }
+
+      /* secondary colors */
+      &.secondary-lightest{
+         background: $secondary_tint_1;
+      }
+      &.secondary-lighter{
+         background-color: $secondary_tint_2;
+      }
+      &.secondary-basis{
+         background-color: $secondary_tint_3;
+      }
+      &.secondary-darker{
+         background-color: $secondary_tint_4;
+      }
+      &.secondary-darkest{
+         background-color: $secondary_tint_5;
+      }
+      &.secondary-extra-1{
+         background-color: $blue;
+      }
+      &.secondary-extra-2{
+         background-color: $blueHover;
+      }
+
+      /* warning colors */
+      &.warning-lightest{
+         background-color: #FCF5CF;
+      }
+      &.warning-lighter{
+         background-color: #F6E06F;
+      }
+      &.warning-basis{
+         background-color: #F0CC0F;
+      }
+      &.warning-darker{
+         background-color: #C0A30C;
+      }
+      &.warning-darkest{
+         background-color: #907A09;
+      }
+
+      /* errors colors */
+      &.error-lightest{
+         background-color: #F7D4D4;
+      }
+      &.error-lighter{
+         background-color: #E87D7D;
+      }
+      &.error-basis{
+         background-color: #D92626;
+      }
+      &.error-darker{
+         background-color: #AE1E1E;
+      }
+      &.error-darkest{
+         background-color: #821717;
+      }
+
+      /* info colors */
+      &.info-lightest{
+         background-color: #A7CFF0;
+      }
+      &.info-lighter{
+         background-color: #76ACD9;
+      }
+      &.info-basis{
+         background-color: #488EC8;
+      }
+      &.info-darker{
+         background-color: #3075AE;
+      }
+      &.info-darkest{
+         background-color: #235681
+      }
+
+      /* succes colors */
+      &.succes-lightest{
+         background-color: #D9F7D4;
+      }
+      &.succes-lighter{
+         background-color: #8CE87D;
+      }
+      &.succes-basis{
+         background-color: #3FD926;
+      }
+      &.succes-darker{
+         background-color: #32AE1E;
+      }
+      &.succes-darkest{
+         background-color: #268217;
+      }
+   }
+   
+   /* 
+      Table buttons
+   */
+   // position buttons
+   table:nth-child(3) tbody tr td:nth-child(2){
+      text-align: center;
+   }
+
+   //  primary button
+   .btn-black{
+      &:hover{
+         cursor: pointer;
+      }
+   }
+
+   //  secondary button
+   .btn-white{
+      border-color: black;
+      color: black;
+
+      &:hover{
+         border-color: black;
+         color: black;
+         background-color: $gray_tint_1;
+      }
+   }
+
+   // menu frontend header button
+   table:nth-child(3) tbody tr:nth-child(4) td:nth-child(2){
+      background-color: $table_background_special;
+   }
+
+   .main-frontend{
+      height: 40px;
+   }
+
+   //menu frontend subheader button
+
+   // menu backend header button
+   table:nth-child(3) tbody tr:nth-child(6) td:nth-child(2){
+      background-color: $table_background_special;
+   }
+
+   .navbar{
+      width: 100%;
+
+      ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+ 
+         li {
+             a {
+                 padding: 10px 14px 5px 14px !important;
+                 margin-bottom: 5px;
+                 display: inline-block;
+                 border-bottom: 2px solid black;
+ 
+                 &.nav-active, &:not(.tab-disabled):hover {
+                     border-color: white;
+                 }
+             }
+         }
+     }
+   }
+
+   .section-under-navbar{
+      height: 40px;
+   }
+
+   //menu backend subheader button
+   table:nth-child(3) tbody tr:nth-child(7) td:nth-child(2){
+      background-color: $table_background_special;
+   }
+   .tabs a{
+      font-weight: 400 !important;
+   }
+
+   .main-backend{
+      background-color: $admingraybackground;
+      height: 24px;
+   }
+
+   /* 
+      Form Fields
+   */
+   .input-radius{
+      border-radius: 2px !important;
+   }
+
+   /* 
+      Table Selections
+   */
+   // position selections
+   table:nth-child(5) tbody tr td:nth-child(2){
+      text-align: center;
+   }
+
+   /* 
+      Table Search filter
+   */
+   .activeFilter{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      
+      :hover{
+         color: white !important;
+         background-color: black !important;
+      }
+   }
+
+   .icon-position{
+      margin-right: 2px;
+   }
+
+   .filter-selected, .selected{
+      font-weight: 700 !important;
+   }
+
+   /* 
+      Table Breadcrumbs
+   */
+   .breadcrumb-item {
+      &::before {
+         padding-right: 10px !important;
+      }
+   }
+
+   /* 
+      Navigation
+   */
+
+   /* 
+      Notifications/Response messages
+   */
+   table:nth-child(9) tbody tr td:nth-child(2){
+      text-align: center;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 500;
+
+      &.succes-messages{
+         background-color: #D9F7D4;
+         color: #268217;
+      }
+      &.warning-messages{
+         background-color: #FCF5CF;
+         color: #907A09;
+      }
+      &.error-messages{
+         background-color: #F7D4D4;
+         color: #821717;
+      }
+   }
+}
