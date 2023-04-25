@@ -44,12 +44,12 @@ body{
    }
 
    td+td {
-      width:35%;
+      width:60%;
    }
 
    td+td+td {
       text-align: start;
-      width: 45%;
+      width: 20%;
       p{
          font-weight: 400;
          font-size: 18px;
@@ -58,7 +58,7 @@ body{
       }
    }
 
-   .styled-table {
+   table {
       border-collapse: collapse;
       margin: 25px 0;
       width: 1450px;
@@ -104,4 +104,86 @@ body{
          }
       }
    }
+
+   .activeFilter{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      
+      :hover{
+         color: white !important;
+         background-color: black !important;
+      }
+   }
+
+   .error-input{
+      width: 300px !important;
+   }
+   .error-input-message{
+      margin-top: -30px !important;
+      margin-left: 10px;
+   }
+
+   .product_item-supplier_picker-button{
+      &:focus{
+         border-color: #B49764 !important;
+         outline: 0;
+         box-shadow: 0 0 0 0.25rem #DBC195;
+      }
+   }
+
+   .filter-selected, .selected{
+      font-weight: 700 !important;
+   }
+
+   .category{
+      margin-bottom: 1.5px;
+   }
+
+   .product-overview-pagination {
+      nav{
+          ul {
+              display: inline-flex;
+              white-space: nowrap;
+              padding: 0;
+              clear: both;
+              margin: 1px;
+              list-style: none;
+      
+              li {
+                  padding: 0;
+                  margin: 0;
+                  display: inline;
+                  overflow: hidden;
+      
+                  button, span {
+                      -webkit-transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
+                      -moz-transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
+                      -ms-transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
+                      -o-transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
+                      transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
+      
+                      display: inline-flex !important;
+                      align-items: center;
+                      justify-content: center;
+                      align-content: center;
+                      margin: 0 5px;
+                      padding: 0 !important;
+                      border: none !important;
+                      width: 44px;
+                      height: 44px;
+                      background: #f4f4f4;
+                      border-radius: 50%;
+                  }
+      
+                  &.active, &:hover {
+                      button, span {
+                          background-color: black;
+                          color: white;
+                      }
+                  }
+              }
+          }
+      }
+  }
 }

@@ -29,59 +29,307 @@
             <thead>
                 <tr><th colspan="3">Dashboard leveranciers</th></tr>
             </thead>
-            <tbody>
+            <tbody class="product_filter">
                 <!-- Foto uploaden -->
                 <tr>
                     <td>Foto uploaden</td>
-                    <td></td>
+                    <td>
+                        <img src="Foto's/Foto uploaden popup.png" alt="">
+                    </td>
                     <td></td>                                               
                 </tr>
                 <!-- Bedrijfsfoto's -->
                 <tr>
                     <td>Bedrijfsfoto's</td>
-                    <td></td>
+                    <td>
+                        <label class="mt-3">
+                            Bedrijfsfoto('s)
+                        </label>
+                        <div wire:id="ouBzL3cuz9RPFpOP8yr8">
+                            <div class="col-12 file-upload-wrapper" x-data="{
+                                isMultiple: Boolean('1') || false,
+                                progress: 0,
+                                isFocused: false,
+                                handleFiles() {
+                                    if (this.isMultiple === true) {
+                                        window.livewire.find('ouBzL3cuz9RPFpOP8yr8').uploadMultiple('file', this.$refs.input.files, () => {
+                                        }, () => {
+                                        }, (event) => {
+                                            this.progress = event.detail.progress || 0
+                                        })
+                                    } else {
+                                        //console.log(this.$refs.input.files[0]);
+                                        window.livewire.find('ouBzL3cuz9RPFpOP8yr8').upload('file',  this.$refs.input.files[0], () => {
+                                            //console.log('uploaded');
+                                        }, () => {
+                                        }, (event) => {
+                                            this.progress = event.detail.progress || 0
+                                        });
+                                    }
+                                }
+                            }">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div for="file-51BMwf" class="file-upload position-relative">
+                                        <div class="file-upload-content d-flex flex-column justify-content-center align-items-center">
+                                            <div class="color-blue ">
+                                                <svg class="w-6 h-6" height="40" width="40" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                                                </svg>
+                                            </div>
+                                            <p class="fw-semi-bold color-blue pt-1 mb-0">
+                                                Upload je foto('s)
+                                            </p>
+                                            <p class="mb-0 text-muted">of sleep in dit vak</p>
+                                        </div>
+                                        <input type="hidden" name="file" wire:model="file" value="">
+                                        
+                                        <input type="file" id="file-51BMwf" accept="image/jpg,image/jpeg,image/png" :multiple="isMultiple" x-ref="input" x-on:change.prevent="handleFiles" x-on:focus="isFocused = true" x-on:blur="isFocused = false" multiple="multiple">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 file-upload-voorwaarden">
+                                    <label>
+                                        Voorwaarden
+                                    </label>
+                                    <ul>
+                                        <li>Minimaal 1000 pixels hoog</li>
+                                        <li>Maximaal 10mb</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </td>
                     <td></td>                                               
                 </tr>
                 <!-- Socials -->
                 <tr>
                     <td>Socials</td>
-                    <td></td>
+                    <td>
+                        <div class="bg-white p-4 adminborder" submit="saveSocials">
+                            <h3>Socials</h3>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="d-flex mt-3 justify-content-between" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
+                                            <label for="social_facebook">
+                                                Facebook
+                                            </label>
+                                            
+                                            <p class="mb-0 counter-text">
+                                            </p>
+                                        </div>
+                                        <input class="mt-1 form-control bg-white" id="social_facebook" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" placeholder="Voeg hier je Facebook-profiellink toe (voorbeeld facebook.com/profiellink)" wire:model.defer="socials.facebook">
+                                        
+                                        
+                                        <div class="d-flex mt-3 justify-content-between" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
+                                            <label for="social_instagram">
+                                                Instagram
+                                            </label>
+                                            
+                                            <p class="mb-0 counter-text">
+                                            </p>
+                                        </div>
+                                        <input class="mt-1 form-control bg-white" id="social_instagram" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" placeholder="Voeg hier je Instagram-profiellink toe (voorbeeld instagram.com/profiellink)" wire:model.defer="socials.instagram">
+                                        
+                                        
+                                        <div class="d-flex mt-3 justify-content-between" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
+                                            <label for="social_linkedin">
+                                                LinkedIn
+                                            </label>
+                                            
+                                            <p class="mb-0 counter-text">
+                                            </p>
+                                        </div>
+                                        <input class="mt-1 form-control bg-white" id="social_linkedin" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" placeholder="Voeg hier je LinkedIn-profiellink toe (voorbeeld linkedin.com/profiellink)" wire:model.defer="socials.linkedin">
+                                        
+                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex mt-3 justify-content-between" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
+                                            <label for="social_twitter">
+                                                Twitter
+                                            </label>
+                                            
+                                            <p class="mb-0 counter-text">
+                                            </p>
+                                        </div>
+                                        <input class="mt-1 form-control bg-white" id="social_twitter" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" placeholder="Voeg hier je Twitter-profiellink toe (voorbeeld twitter.com/profiellink)" wire:model.defer="socials.twitter">
+                                        
+                                        
+                                        <div class="d-flex mt-3 justify-content-between" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
+                                            <label for="social_youtube">
+                                                YouTube
+                                            </label>
+                                            
+                                            <p class="mb-0 counter-text">
+                                            </p>
+                                        </div>
+                                        <input class="mt-1 form-control bg-white" id="social_youtube" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" placeholder="Voeg hier je YouTube-profiellink toe (voorbeeld youtube.com/profiellink)" wire:model.defer="socials.youtube">
+                                        
+                                        
+                                        <div class="d-flex mt-3 justify-content-between" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
+                                            <label for="social_tiktok">
+                                                TikTok
+                                            </label>
+                                            
+                                            <p class="mb-0 counter-text">
+                                            </p>
+                                        </div>
+                                        <input class="mt-1 form-control bg-white" id="social_tiktok" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" placeholder="Voeg hier je TikTok-profiellink toe (voorbeeld tiktok.com/profiellink)" wire:model.defer="socials.tiktok">                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
                     <td></td>                                               
                 </tr>
                 <!-- Product toevoegen/bewerken aan assortiment -->
                 <tr>
                     <td>Product toevoegen/bewerken aan assortiment</td>
-                    <td></td>
+                    <td>
+                        <div wire:id="72gn8DVPd4pmE6E9E04k" class="col-md-4 " x-data="{selectedVariationId: window.Livewire.find('72gn8DVPd4pmE6E9E04k').entangle('selectedVariationId')}">
+                            <div class="product_overview_item d-flex flex-column">
+                                <div class="product_overview_item-image-wrapper">
+                                    <a href="https://samplestore.webber.nl/nl/products/3">
+                                        <img src="https://samplestore.webber.nl/storage/5/conversions/from-iron-sludge-to-ceramic-products-materialdistrict-3-960x480-product_overview.jpg" width="342" height="342" alt="Oer" class="img-fluid product_overview_item-image aspect-square">
+                                    </a>
+                                    <div class="product_overview_item-image-wrapper-hover product_overview_item-image-wrapper-hover-top">
+                                        <div class="product_overview_item-image-wrapper-supplier font-small">
+                                            Sample geleverd door<br>
+                                            <a class="product_overview_item-image-wrapper-supplier-name" href="https://samplestore.webber.nl/nl/products/3">Finsa Nederland</a>
+                                            <p class="font-extra-small m-0 mt-2">Meer leveranciers vanaf <span class="fw-bold">€0,-</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product_overview_item-image-wrapper-hover product_overview_item-image-wrapper-hover-bottom">
+                                        <div class="product_overview_item-image-wrapper-buttons">
+                                            <a href="#" wire:click.prevent="toggleFavorite(3,3)" class="product_overview-button">
+                                                <svg width="21" height="21" fill="white" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                                </svg>
+                                            </a>
+                                            <a href="#" class="product_overview-button">
+                                                <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.85714 5V3.75C4.85714 1.67891 6.45469 0 8.5 0C10.5112 0 12.1429 1.67891 12.1429 3.75V5H15.1786C16.1842 5 17 5.83984 17 6.875V16.25C17 18.3203 15.3683 20 13.3571 20H3.64286C1.63094 20 0 18.3203 0 16.25V6.875C0 5.83984 0.815469 5 1.82143 5H4.85714ZM6.07143 5H10.9286V3.75C10.9286 2.36914 9.83951 1.25 8.5 1.25C7.16049 1.25 6.07143 2.36914 6.07143 3.75V5ZM1.82143 6.25C1.48598 6.25 1.21429 6.53125 1.21429 6.875V16.25C1.21429 17.6289 2.30145 18.75 3.64286 18.75H13.3571C14.6967 18.75 15.7857 17.6289 15.7857 16.25V6.875C15.7857 6.53125 15.5125 6.25 15.1786 6.25H12.1429V9.375C12.1429 9.71875 11.8696 10 11.5357 10C11.2018 10 10.9286 9.71875 10.9286 9.375V6.25H6.07143V9.375C6.07143 9.71875 5.79821 10 5.46429 10C5.13036 10 4.85714 9.71875 4.85714 9.375V6.25H1.82143Z" fill="white"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between product_overview-top">
+                                    <a class="mb-0 product_overview-title" href="https://samplestore.webber.nl/nl/products/3">Oer</a>
+                                    <p class="mb-0 product_overview-price font-small flex-shrink-0 flex-grow-0">Vanaf €0,-</p>
+                                </div>
+                                <div class="product_overview-bottom">
+                                    <p class="mb-0 font-small">Interface, Inc.</p>
+                                    <div class="d-flex product_overview-variations">
+                                        <a href="#" wire:click.prevent="selectVariation(3)" class="product_overview-variation_wrapper">
+                                            <div class="product_overview-variation_item d-inline-flex justify-content-center align-items-center" x-data="" x-tooltip.raw="Roze">
+                                                <img src="https://samplestore.webber.nl/storage/5/conversions/from-iron-sludge-to-ceramic-products-materialdistrict-3-960x480-product_overview.jpg" alt="Roze" width="122" height="122">
+                                                <div class="variation_select" x-show="selectedVariationId == 3">
+                                                    <svg width="10" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path d="M3.54802 6.20518C3.67921 6.00501 3.73884 5.88491 3.82232 5.78483C5.42041 3.99 7.02447 2.20185 8.62256 0.407017C9.04593 -0.0667111 9.46931 -0.133433 9.79727 0.213522C10.1252 0.56715 10.0656 1.06757 9.63627 1.54797C7.84736 3.54964 6.05249 5.55798 4.26358 7.55964C3.75076 8.13346 3.39894 8.13346 2.89805 7.57299C2.02148 6.59217 1.14492 5.61135 0.26239 4.62386C0.0417583 4.37699 -0.0536502 4.09676 0.0417583 3.74313C0.125241 3.44955 0.304132 3.27607 0.566505 3.20935C0.870619 3.13596 1.10318 3.27607 1.31188 3.51627C1.97974 4.27691 2.6476 5.03754 3.3095 5.80485C3.38702 5.89159 3.43472 6.00502 3.54802 6.19184V6.20518Z" fill="white"></path>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_4074_1908" x="-1.99512" y="-0.00521851" width="14.002" height="11.9969" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="2"></feOffset>
+                                                                <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+                                                                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4074_1908"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4074_1908" result="shape"></feBlend>
+                                                            </filter>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" wire:click.prevent="selectVariation(4)" class="product_overview-variation_wrapper">
+                                            <div class="product_overview-variation_item d-inline-flex justify-content-center align-items-center" x-data="" x-tooltip.raw="Dessert">
+                                                <img src="https://samplestore.webber.nl/storage/6/conversions/from-iron-sludge-to-ceramic-products-materialdistrict-2-960x480-product_overview.jpg" alt="Dessert" width="122" height="122">
+                                                <div class="variation_select" x-show="selectedVariationId == 4" style="display: none;">
+                                                    <svg width="10" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <path d="M3.54802 6.20518C3.67921 6.00501 3.73884 5.88491 3.82232 5.78483C5.42041 3.99 7.02447 2.20185 8.62256 0.407017C9.04593 -0.0667111 9.46931 -0.133433 9.79727 0.213522C10.1252 0.56715 10.0656 1.06757 9.63627 1.54797C7.84736 3.54964 6.05249 5.55798 4.26358 7.55964C3.75076 8.13346 3.39894 8.13346 2.89805 7.57299C2.02148 6.59217 1.14492 5.61135 0.26239 4.62386C0.0417583 4.37699 -0.0536502 4.09676 0.0417583 3.74313C0.125241 3.44955 0.304132 3.27607 0.566505 3.20935C0.870619 3.13596 1.10318 3.27607 1.31188 3.51627C1.97974 4.27691 2.6476 5.03754 3.3095 5.80485C3.38702 5.89159 3.43472 6.00502 3.54802 6.19184V6.20518Z" fill="white"></path>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_4074_1908" x="-1.99512" y="-0.00521851" width="14.002" height="11.9969" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="2"></feOffset>
+                                                                <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+                                                                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4074_1908"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4074_1908" result="shape"></feBlend>
+                                                            </filter>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
                     <td></td>                                               
                 </tr>
                 <!-- Productcategoriën -->
                 <tr>
                     <td>Productcategoriën</td>
-                    <td></td>
-                    <td></td>                                               
-                </tr>
-                <!-- Prijsrange -->
-                <tr>
-                    <td>Prijsrange</td>
-                    <td></td>
-                    <td></td>                                               
-                </tr>
-                <!-- Patroongrootte -->
-                <tr>
-                    <td>Patroongrootte</td>
-                    <td></td>
+                    <td class="filter_block">
+                        <div class="multiselect position-relative bg-white" style="z-index: 35" @click.outside="closeAndRest()" x-data="multiselect_materials()">
+                            <div class="mt-1 form-control bg-white multiselectinput input-radius" @click.prevent="openSelect = !openSelect">
+                                <ul class="multiselect-list">
+                                    <template x-for="select in selected">
+                                        <li class="multiselect-list-item">
+                                            <button @click.prevent="clickItem(select)" type="button" class="multiselect-list-item__remove" tabindex="-1" title="Remove item" aria-label="Remove item">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                            <span class="multiselect-list-item__display" x-text="returnLang(select)"></span>
+                                        </li>
+                                    </template>
+                                </ul>
+                                <div class="d-flex activeFilter mt-1">
+                                    <div>
+                                        <a href="#" wire:click.prevent="deleteFromFilter('selectedCategories','0')">Vloermozaïeken x</a>
+                                    </div>
+                                    <div>
+                                        <a href="#" wire:click.prevent="deleteFromFilter('selectedMaterials','0')">Vloertegels x</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="multiselectinput-add mt-1">
+                                    <svg width="18" height="18" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </td>
                     <td></td>                                               
                 </tr>
                 <!-- Popup -->
                 <tr>
                     <td>Popup</td>
-                    <td></td>
+                    <td>
+                        <img src="Foto's/algemene popup.png" alt="">
+                    </td>
                     <td></td>                                               
                 </tr>
                 <!-- Variantnaam -->
                 <tr>
                     <td>Variantnaam</td>
-                    <td></td>
+                    <td>
+                        <input class="form-control bg-white is-invalid input-radius error-input" id="team_name" type="text" maxlength="50" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" wire:model="team.name">
+                        <span class="invalid-feedback d-block error-input-message" role="alert">
+                            <strong>Naam is verplicht</strong>
+                        </span>
+                        <img src="Foto's/variantnaam error.png" alt="" class="mt-3">
+                    </td>
                     <td></td>                                               
                 </tr>
             </tbody>
@@ -91,41 +339,160 @@
             <thead>
                 <tr><th colspan="3">Webshop Klanten</th></tr>
             </thead>
-            <tbody>
-                <!-- Productoverzicht selecteer product -->
-                <tr>
-                    <td>Productoverzicht selecteer product</td>
-                    <td></td>
-                    <td></td>                                               
-                </tr>
+            <tbody class="product_filter">
                 <!-- Productoverzicht paginering -->
                 <tr>
                     <td>Productoverzicht paginering</td>
-                    <td></td>
+                    <td>
+                        <div>
+                            <div class="product-overview-pagination">
+                                <nav>
+                                    <ul>
+                                        <li class="active" wire:key="paginator-page-1-page-1" aria-current="page"><span>1</span></li>
+                                        <li class="" wire:key="paginator-page-1-page-2">
+                                            <button type="button" wire:click="gotoPage(2, 'page')">2</button>
+                                        </li>
+                                        <li class="">
+                                            <button type="button" dusk="nextPage" wire:click="nextPage('page')" wire:loading.attr="disabled" rel="next" aria-label="Volgende »">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="16" width="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </td>
                     <td></td>                                               
                 </tr>
-                <!-- Filter component -->
+                <!-- Actieve filters -->
                 <tr>
-                    <td>Filter component</td>
-                    <td></td>
+                    <td>Actieve filters</td>
+                    <td class="filter_block">
+                        <div class="d-flex activeFilter">
+                            <div>
+                                <a href="#" wire:click.prevent="deleteFromFilter('selectedCategories','0')">Overige Wandafwerkingsmaterialen x</a>
+                            </div>
+                            <div>
+                                <a href="#" wire:click.prevent="deleteFromFilter('selectedMaterials','0')">Overige Houtsoorten x</a>
+                            </div>
+                            <div>
+                                <a href="#" wire:click.prevent="deleteFromFilter('selectedColors','0')">Bruin x</a>
+                            </div>
+                        </div>
+                    </td>
                     <td></td>                                               
                 </tr>
-                <!-- Productdetail productmerk -->
+                <!-- Categorie items -->
                 <tr>
-                    <td>Productdetail productmerk</td>
-                    <td></td>
+                    <td>Categorie items</td>
+                    <td>
+                        <div class="filter_block-multiple_items-item d-flex justify-content-between filter-level-5 latest-row" :class="{'filter-selected': selectedCategories.includes('conmat_external_masonry_blocks')}">
+                            <label class="d-flex align-items-center">
+                                <div class="custom-checkbox d-flex align-items-center">
+                                    <input class="me-2" type="checkbox" value="conmat_external_masonry_blocks" x-model="selectedCategories">
+                                    <span class="category">Metselblokken Buiten</span>
+                                    
+                                </div>
+                            </label>
+                        </div>
+                        <div class="filter_block-multiple_items-item d-flex justify-content-between filter-level-5 latest-row filter-selected" :class="{'filter-selected': selectedCategories.includes('facades_bricks')}">
+                            <label class="d-flex align-items-center">
+                                <div class="custom-checkbox selected d-flex align-items-center">
+                                    <input class="me-2" type="checkbox" value="facades_bricks" x-model="selectedCategories" style="background-image: url('https://samplestore.webber.nl/images/checkbox-black.svg')";>
+                                    <span class="category">Metselblokken Buiten</span>
+                                </div>
+                            </label>
+                        </div>
+                    </td>
                     <td></td>                                               
-                </tr>
-                <!-- Productdetail input -->
+                <!-- select input -->
                 <tr>
-                    <td>Productdetail input</td>
-                    <td></td>
+                    <td>select input</td>
+                    <td>
+                        <div class="d-flex justify-content-center flex-1">
+                            <div x-data="{
+                                supplierOpen: false,
+                                selectedSupplier: window.Livewire.find('8Ygu7tRI28KfOPEOghib').entangle('selectedSupplier'),
+                                toggle() {
+                                    if (this.supplierOpen) {
+                                        return this.close()
+                                    }
+                                    
+                                    this.$refs.button.focus()
+                                    
+                                    this.supplierOpen = true
+                                    console.log('test');
+                                },
+                                close(focusAfter) {
+                                    if (! this.supplierOpen) return
+                                    
+                                    this.supplierOpen = false
+                                    
+                                    focusAfter &amp;&amp; focusAfter.focus()
+                                }
+                            }" x-on:keydown.escape.prevent.stop="close($refs.button)" x-on:focusin.window="! $refs.panel.contains($event.target) &amp;&amp; close()" x-id="['dropdown-button']" class="position-relative w-100">
+                            <!-- Button -->
+                            <button x-ref="button" x-on:click="toggle()" :aria-expanded="open" :aria-controls="$id('dropdown-button')" type="button" :class="{'not-selected': !selectedSupplier}" class="product_item-supplier_picker-button d-flex align-items-center justify-content-between not-selected" aria-controls="dropdown-button-1">
+                                <p class="mb-0" x-show="!selectedSupplier">Selecteer leverancier</p>
+                                <p class="mb-0" x-show="selectedSupplier" x-text="selectedSupplier?.name" style="display: none;"></p>
+                                
+                                <!-- Heroicon: chevron-down -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            
+                            <!-- Panel -->
+                            <div x-ref="panel" x-show="supplierOpen" x-transition.origin.top.left="" :id="$id('dropdown-button')" class="product_item-supplier_picker-dropdown" id="dropdown-button-1" style="display: none;">
+                                <div class="product_item-supplier_picker-dropdown-item" x-on:click="selectedSupplier = {&quot;id&quot;:28,&quot;user_id&quot;:null,&quot;name&quot;:&quot;Architectenweb Holding B.V.&quot;,&quot;email&quot;:&quot;redactie@architectenweb.nl&quot;,&quot;company_type&quot;:&quot;supplier&quot;,&quot;payoff&quot;:{&quot;en&quot;:null},&quot;text&quot;:{&quot;en&quot;:null,&quot;nl&quot;:&quot;Architectenweb is h\u00e9t platform voor architecten in Nederland.\n\nEr is geen ander platform dat zo intensief gebruikt wordt door Nederlandse architecten als Architectenweb. Architecten bieden wij een breed palet aan mogelijkheden om vakinhoudelijke informatie in te winnen en te delen: via onze website, via social media, via magazines en via evenementen.&quot;},&quot;kvk&quot;:&quot;32115999&quot;,&quot;btw&quot;:&quot;NL123456789B01&quot;,&quot;logo_path&quot;:null,&quot;personal_team&quot;:true,&quot;created_at&quot;:&quot;2023-03-03T10:36:38.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-03-19T11:09:37.000000Z&quot;,&quot;archive&quot;:0,&quot;product_supplier&quot;:{&quot;product_id&quot;:24,&quot;supplier_id&quot;:28,&quot;sample_size&quot;:&quot;A4&quot;,&quot;delivery_time&quot;:null,&quot;user_customer&quot;:18,&quot;user_sending&quot;:19,&quot;price&quot;:0,&quot;id&quot;:51,&quot;customer_service&quot;:{&quot;id&quot;:18,&quot;first_name&quot;:&quot;Jeroen&quot;,&quot;last_name&quot;:&quot;van Oostveen&quot;,&quot;email&quot;:&quot;Jeroen@districtmaterials.com&quot;,&quot;email_verified_at&quot;:null,&quot;gender&quot;:1,&quot;timezone&quot;:&quot;Europe\/Amsterdam&quot;,&quot;language&quot;:&quot;nl&quot;,&quot;current_team_id&quot;:28,&quot;profile_photo_path&quot;:null,&quot;created_at&quot;:&quot;2023-03-03T10:48:16.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-03-03T10:48:16.000000Z&quot;,&quot;phone&quot;:&quot;&quot;,&quot;function&quot;:&quot;&quot;,&quot;deleted_at&quot;:null,&quot;last_activity&quot;:null}}}; supplierOpen = false">
+                                    <div class="product_item-supplier_picker-dropdown-item-inner">
+                                        <div class="product_item-supplier_picker-dropdown-item-inner-content">
+                                            <div class="d-flex flex-row">
+                                                <div class="w-100">
+                                                    <div class="d-flex align-items-center">
+                                                        <h4>Architectenweb Holding B.V.</h4>
+                                                    </div>
+                                                    <p class="country">Amsterdam
+                                                        , Nederland</p>
+                                                        <table>
+                                                            <tbody><tr>
+                                                                <th>Sample price</th>
+                                                                <td>
+                                                                    Gratis
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Ships in</th>
+                                                                <td> dagen</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Size</th>
+                                                                <td>A4</td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </div>
+                                                    <div class="flex-shrink-0 flex-grow-0 d-flex align-items-center">
+                                                        <svg width="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
                     <td></td>                                               
-                </tr>
-                <!-- Productdetail profielfoto -->
+                <!-- Profielfoto  -->
                 <tr>
-                    <td>Productdetail profielfoto</td>
-                    <td></td>
+                    <td>Profielfoto</td>
+                    <td>
+                        <img class="rounded-circle me-19" height="45" width="45" src="https://ui-avatars.com/api/?name=K+S&amp;color=7A5921&amp;background=DBC195">
+                    </td>
                     <td></td>                                               
                 </tr>
             </tbody>
