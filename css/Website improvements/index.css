@@ -34208,6 +34208,9 @@ body a {
   text-decoration: none;
   color: black;
 }
+body .bold {
+  font-weight: 600;
+}
 body td {
   border-right: 2px solid #024913;
   width: 100px;
@@ -34249,10 +34252,16 @@ body table.styled-table th, body table.styled-table td {
 body table.styled-table tbody tr {
   border-bottom: 1px solid #dfe5e1;
 }
-body table.styled-table tbody tr:nth-of-type(odd) {
+body table.styled-table:nth-child(1) tbody tr:nth-of-type(odd) {
+  background-color: #fafafa;
+}
+body table.styled-table:nth-child(1) tbody tr:nth-of-type(even) {
   background-color: white;
 }
-body table.styled-table tbody tr:nth-of-type(even) {
+body table.styled-table:nth-child(2) tbody tr:nth-of-type(odd) {
+  background-color: white;
+}
+body table.styled-table:nth-child(2) tbody tr:nth-of-type(even) {
   background-color: #fafafa;
 }
 body table.styled-table tbody tr:first-of-type {

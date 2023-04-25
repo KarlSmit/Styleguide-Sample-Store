@@ -42,7 +42,7 @@
                 <tr>
                     <td>Bedrijfsfoto's</td>
                     <td>
-                        <label class="mt-3">
+                        <label class="mt-3 bold">
                             Bedrijfsfoto('s)
                         </label>
                         <div wire:id="ouBzL3cuz9RPFpOP8yr8">
@@ -87,8 +87,14 @@
                                         <input type="file" id="file-51BMwf" accept="image/jpg,image/jpeg,image/png" :multiple="isMultiple" x-ref="input" x-on:change.prevent="handleFiles" x-on:focus="isFocused = true" x-on:blur="isFocused = false" multiple="multiple">
                                     </div>
                                 </div>
-                                <div class="col-md-6 file-upload-voorwaarden">
-                                    <label>
+                                <div class="col-md-6 file-upload-voorwaarden mt-1">
+                                    <label class="bold">
+                                        Wat houd het in?
+                                    </label>
+                                    <p>
+                                        Uw bedrijfsfoto worden gebruikt voor op de webshop, zodat de gebruikers wat meer beeld krijgen bij uw bedrijf.
+                                    </p>
+                                    <label class="bold">
                                         Voorwaarden
                                     </label>
                                     <ul>
@@ -108,6 +114,7 @@
                     <td>
                         <div class="bg-white p-4 adminborder" submit="saveSocials">
                             <h3>Socials</h3>
+                            <p class="mb-0">Voeg hieronder je socials links toe (socialmedia-website/profiellink), <br>bijvoorbeeld: linkedin.com/company/materialdistrict</p>
                             <div class="col-12">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -115,48 +122,36 @@
                                             <label for="social_facebook">
                                                 Facebook
                                             </label>
-                                            
                                             <p class="mb-0 counter-text">
                                             </p>
                                         </div>
-                                        <input class="mt-1 form-control bg-white" id="social_facebook" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" placeholder="Voeg hier je Facebook-profiellink toe (voorbeeld facebook.com/profiellink)" wire:model.defer="socials.facebook">
-                                        
-                                        
+                                        <input class="mt-1 form-control bg-white" id="social_facebook" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" wire:model.defer="socials.facebook">
                                         <div class="d-flex mt-3 justify-content-between" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
                                             <label for="social_instagram">
                                                 Instagram
                                             </label>
-                                            
                                             <p class="mb-0 counter-text">
                                             </p>
                                         </div>
-                                        <input class="mt-1 form-control bg-white" id="social_instagram" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" placeholder="Voeg hier je Instagram-profiellink toe (voorbeeld instagram.com/profiellink)" wire:model.defer="socials.instagram">
-                                        
-                                        
+                                        <input class="mt-1 form-control bg-white" id="social_instagram" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" wire:model.defer="socials.instagram">
                                         <div class="d-flex mt-3 justify-content-between" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
                                             <label for="social_linkedin">
                                                 LinkedIn
                                             </label>
-                                            
                                             <p class="mb-0 counter-text">
                                             </p>
                                         </div>
-                                        <input class="mt-1 form-control bg-white" id="social_linkedin" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" placeholder="Voeg hier je LinkedIn-profiellink toe (voorbeeld linkedin.com/profiellink)" wire:model.defer="socials.linkedin">
-                                        
-                                        
+                                        <input class="mt-1 form-control bg-white" id="social_linkedin" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" wire:model.defer="socials.linkedin">
                                     </div>
                                     <div class="col-md-6">
                                         <div class="d-flex mt-3 justify-content-between" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
                                             <label for="social_twitter">
                                                 Twitter
                                             </label>
-                                            
                                             <p class="mb-0 counter-text">
                                             </p>
                                         </div>
-                                        <input class="mt-1 form-control bg-white" id="social_twitter" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" placeholder="Voeg hier je Twitter-profiellink toe (voorbeeld twitter.com/profiellink)" wire:model.defer="socials.twitter">
-                                        
-                                        
+                                        <input class="mt-1 form-control bg-white" id="social_twitter" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" wire:model.defer="socials.twitter">
                                         <div class="d-flex mt-3 justify-content-between" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
                                             <label for="social_youtube">
                                                 YouTube
@@ -165,18 +160,16 @@
                                             <p class="mb-0 counter-text">
                                             </p>
                                         </div>
-                                        <input class="mt-1 form-control bg-white" id="social_youtube" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" placeholder="Voeg hier je YouTube-profiellink toe (voorbeeld youtube.com/profiellink)" wire:model.defer="socials.youtube">
-                                        
-                                        
+                                        <input class="mt-1 form-control bg-white" id="social_youtube" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" wire:model.defer="socials.youtube">
                                         <div class="d-flex mt-3 justify-content-between" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
                                             <label for="social_tiktok">
                                                 TikTok
                                             </label>
-                                            
                                             <p class="mb-0 counter-text">
                                             </p>
                                         </div>
-                                        <input class="mt-1 form-control bg-white" id="social_tiktok" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" placeholder="Voeg hier je TikTok-profiellink toe (voorbeeld tiktok.com/profiellink)" wire:model.defer="socials.tiktok">                                            </div>
+                                        <input class="mt-1 form-control bg-white" id="social_tiktok" type="text" maxlength="524288" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" wire:model.defer="socials.tiktok">                                            
+                                    </div>
                                 </div>
                             </div>
                         </div>
