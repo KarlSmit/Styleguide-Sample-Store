@@ -34530,6 +34530,38 @@ body .filter-selected, body .selected {
 body .breadcrumb-item::before {
   padding-right: 10px !important;
 }
+body .product-overview-pagination nav ul {
+  display: inline-flex;
+  white-space: nowrap;
+  padding: 0;
+  clear: both;
+  margin: 1px;
+  list-style: none;
+}
+body .product-overview-pagination nav ul li {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  overflow: hidden;
+}
+body .product-overview-pagination nav ul li button, body .product-overview-pagination nav ul li span {
+  transition: background-color 0.3s linear 0s, color 0.3s linear 0s, border 0.3s linear 0s;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 0 5px;
+  padding: 0 !important;
+  border: none !important;
+  width: 44px;
+  height: 44px;
+  background: #f4f4f4;
+  border-radius: 50%;
+}
+body .product-overview-pagination nav ul li.active button, body .product-overview-pagination nav ul li.active span, body .product-overview-pagination nav ul li:hover button, body .product-overview-pagination nav ul li:hover span {
+  background-color: black;
+  color: white;
+}
 body table:nth-child(9) tbody tr td:nth-child(2) {
   text-align: center;
   font-size: 18px;

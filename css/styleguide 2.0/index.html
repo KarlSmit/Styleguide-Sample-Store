@@ -1298,7 +1298,27 @@
             <tbody>
                 <tr>
                     <td>Pagination</td>
-                    <td></td>
+                    <td>
+                        <div>
+                            <div class="product-overview-pagination">
+                                <nav>
+                                    <ul>
+                                        <li class="active" wire:key="paginator-page-1-page-1" aria-current="page"><span>1</span></li>
+                                        <li class="" wire:key="paginator-page-1-page-2">
+                                            <button type="button" wire:click="gotoPage(2, 'page')">2</button>
+                                        </li>
+                                        <li class="">
+                                            <button type="button" dusk="nextPage" wire:click="nextPage('page')" wire:loading.attr="disabled" rel="next" aria-label="Volgende »">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="16" width="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </td>
                     <td></td>                                               
                 </tr>
             </tbody>
