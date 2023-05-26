@@ -198,19 +198,19 @@ body{
 
       /* secondary colors */
       &.secondary-lightest{
-         background: $secondary_tint_1;
+         background-color: $secondary_tint_5;
       }
       &.secondary-lighter{
-         background-color: $secondary_tint_2;
+         background-color: $secondary_tint_4;
       }
       &.secondary-basis{
          background-color: $secondary_tint_3;
       }
       &.secondary-darker{
-         background-color: $secondary_tint_4;
+         background-color: $secondary_tint_2;
       }
       &.secondary-darkest{
-         background-color: $secondary_tint_5;
+         background-color: $secondary_tint_1;
       }
       &.secondary-extra-1{
          background-color: $blue;
