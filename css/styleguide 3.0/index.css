@@ -19565,7 +19565,7 @@ input[type=range]::-webkit-slider-thumb:hover .range-tooltip {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
 }
 .header .sub_header {
-  background-color: #f4f4f4;
+  background-color: #F4F4F4;
   padding: 10px 0;
 }
 .header .sub_header a {
@@ -19584,7 +19584,7 @@ input[type=range]::-webkit-slider-thumb:hover .range-tooltip {
 .header .main_header ul li a {
   font-weight: normal !important;
   text-decoration: none;
-  color: black;
+  color: #000000;
   position: relative;
   transition: all 300ms;
   overflow: hidden;
@@ -19644,7 +19644,7 @@ input[type=range]::-webkit-slider-thumb:hover .range-tooltip {
 }
 
 .languageselector {
-  color: black;
+  color: #000000;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -33620,7 +33620,7 @@ footer ul li a {
 }
 
 .navbar {
-  background-color: black;
+  background-color: #000000;
 }
 .navbar .nav-item {
   margin: 0 10px;
@@ -33647,9 +33647,6 @@ footer ul li a {
   transition: opacity 300ms, transform 300ms;
   transform: translate3d(-100%, 0, 0);
 }
-.navbar .nav-item .nav-link.active {
-  color: white !important;
-}
 .navbar .nav-item .nav-link.active::after {
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -33666,12 +33663,12 @@ footer ul li a {
   text-decoration: none;
 }
 .breadcrumb .breadcrumb-item a:not(.active):hover {
-  color: black;
+  color: #000000;
   text-decoration: underline;
 }
 .breadcrumb .breadcrumb-item.active {
   font-weight: bold;
-  color: black;
+  color: #000000;
 }
 
 .languageswitcher {
@@ -34486,24 +34483,12 @@ body th {
   font-size: 22px;
   line-height: 28px;
 }
-body.body-regular {
-  font-weight: 400;
+body p {
+  line-height: 28px;
 }
-body.body-medium {
-  font-weight: 500;
-}
-body.body-bold {
-  font-weight: 700;
-}
-body.body-link:hover {
+body.link:hover {
   color: #ab8f54;
   cursor: pointer;
-}
-body.body-underline {
-  text-decoration: underline;
-}
-body.body-italic {
-  font-style: italic;
 }
 body a {
   text-decoration: none;
@@ -34714,38 +34699,6 @@ body .filter-selected, body .selected {
 }
 body .breadcrumb-item::before {
   padding-right: 10px !important;
-}
-body .product-overview-pagination nav ul {
-  display: inline-flex;
-  white-space: nowrap;
-  padding: 0;
-  clear: both;
-  margin: 1px;
-  list-style: none;
-}
-body .product-overview-pagination nav ul li {
-  padding: 0;
-  margin: 0;
-  display: inline;
-  overflow: hidden;
-}
-body .product-overview-pagination nav ul li button, body .product-overview-pagination nav ul li span {
-  transition: background-color 0.3s linear 0s, color 0.3s linear 0s, border 0.3s linear 0s;
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  margin: 0 5px;
-  padding: 0 !important;
-  border: none !important;
-  width: 44px;
-  height: 44px;
-  background: #f4f4f4;
-  border-radius: 50%;
-}
-body .product-overview-pagination nav ul li.active button, body .product-overview-pagination nav ul li.active span, body .product-overview-pagination nav ul li:hover button, body .product-overview-pagination nav ul li:hover span {
-  background-color: black;
-  color: white;
 }
 body table:nth-child(9) tbody tr td:nth-child(2) {
   text-align: center;

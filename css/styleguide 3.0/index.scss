@@ -22,65 +22,15 @@ body{
       font-size: 22px;
       line-height: 28px;
    }
-
-   // h1, h2, h3, h4, h5, h6{
-   //    font-weight: 400;
-   // }
    
-   // h1{
-   //    font-size: 44px;
-   //    line-height: 48px;
-   // }
+   p{
+      line-height: 28px;
+   }
    
-   // h2{
-   //    font-size: 32px;
-   //    line-height: 38px;
-   // }
-   
-   // h3{
-   //    font-size: 22px;
-   //    line-height: 28px;
-   // }
-   
-   // h4{
-   //    font-size: 18px;
-   //    line-height: 28px;
-   // }
-   
-   // h5{
-   //    font-size: 16px;
-   //    line-height: 26px;
-   // }
-   
-   // h6{
-   //    font-size: 12px;
-   //    line-height: 22px;
-   // }
-   
-   // p{
-   //    line-height: 28px;
-      
-      &.body-regular{
-         font-weight: 400;
-      }
-      &.body-medium{
-         font-weight: 500;
-      }
-      &.body-bold{
-         font-weight: 700;
-      }
-      &.body-link{
-         &:hover{
-            color: $secondary_tint_3;
-            cursor: pointer;
-         }
-      }
-      &.body-underline{
-         text-decoration: underline;
-      }
-      &.body-italic{
-         font-style: italic;
-      }
+   &.link:hover{
+      color: $secondary_tint_3;
+      cursor: pointer;
+   }
 
    a{
       text-decoration: none;
@@ -367,52 +317,52 @@ body{
       Navigation
    */
    // voor nu even snel gedaan, moet gekoppeld worden aan het pagination.scss file
-   .product-overview-pagination {
-      nav{
-          ul {
-              display: inline-flex;
-              white-space: nowrap;
-              padding: 0;
-              clear: both;
-              margin: 1px;
-              list-style: none;
+//    .product-overview-pagination {
+//       nav{
+//           ul {
+//               display: inline-flex;
+//               white-space: nowrap;
+//               padding: 0;
+//               clear: both;
+//               margin: 1px;
+//               list-style: none;
       
-              li {
-                  padding: 0;
-                  margin: 0;
-                  display: inline;
-                  overflow: hidden;
+//               li {
+//                   padding: 0;
+//                   margin: 0;
+//                   display: inline;
+//                   overflow: hidden;
       
-                  button, span {
-                      -webkit-transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
-                      -moz-transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
-                      -ms-transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
-                      -o-transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
-                      transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
+//                   button, span {
+//                       -webkit-transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
+//                       -moz-transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
+//                       -ms-transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
+//                       -o-transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
+//                       transition: background-color .3s linear 0s,color .3s linear 0s,border .3s linear 0s;
       
-                      display: inline-flex !important;
-                      align-items: center;
-                      justify-content: center;
-                      align-content: center;
-                      margin: 0 5px;
-                      padding: 0 !important;
-                      border: none !important;
-                      width: 44px;
-                      height: 44px;
-                      background: #f4f4f4;
-                      border-radius: 50%;
-                  }
+//                       display: inline-flex !important;
+//                       align-items: center;
+//                       justify-content: center;
+//                       align-content: center;
+//                       margin: 0 5px;
+//                       padding: 0 !important;
+//                       border: none !important;
+//                       width: 44px;
+//                       height: 44px;
+//                       background: #f4f4f4;
+//                       border-radius: 50%;
+//                   }
       
-                  &.active, &:hover {
-                      button, span {
-                          background-color: black;
-                          color: white;
-                      }
-                  }
-              }
-          }
-      }
-  }
+//                   &.active, &:hover {
+//                       button, span {
+//                           background-color: black;
+//                           color: white;
+//                       }
+//                   }
+//               }
+//           }
+//       }
+//   }
 
    /* 
       Notifications/Response messages
@@ -424,16 +374,16 @@ body{
       font-weight: 500;
 
       &.succes-messages{
-         background-color: #D9F7D4;
-         color: #268217;
+         background-color: $succes_tint_5;
+         color: $succes_tint_1;
       }
       &.warning-messages{
-         background-color: #FCF5CF;
-         color: #907A09;
+         background-color: $warning_tint_5;
+         color: $warning_tint_1;
       }
       &.error-messages{
-         background-color: #F7D4D4;
-         color: #821717;
+         background-color: $error_tint_5;
+         color: $error_tint_1;
       }
    }
 }
