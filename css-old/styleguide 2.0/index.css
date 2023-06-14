@@ -34386,12 +34386,6 @@ body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-darker {
 body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-darkest {
   background-color: #7A5921;
 }
-body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-extra-1 {
-  background-color: #B49764;
-}
-body table:nth-child(2) tbody tr td:nth-child(2) div.secondary-extra-2 {
-  background-color: #ab8f54;
-}
 body table:nth-child(2) tbody tr td:nth-child(2) div.warning-lightest {
   background-color: #FCF5CF;
 }
