@@ -29,6 +29,7 @@
 
                     &.active {
                         @extend .fw-medium;
+                        color: white !important;
                         &::after {
                             opacity: 1;
                             transform: translate3d(0, 0, 0);
