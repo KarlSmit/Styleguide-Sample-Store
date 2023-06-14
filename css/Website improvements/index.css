@@ -19565,7 +19565,7 @@ input[type=range]::-webkit-slider-thumb:hover .range-tooltip {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
 }
 .header .sub_header {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   padding: 10px 0;
 }
 .header .sub_header a {
@@ -19584,7 +19584,7 @@ input[type=range]::-webkit-slider-thumb:hover .range-tooltip {
 .header .main_header ul li a {
   font-weight: normal !important;
   text-decoration: none;
-  color: #000000;
+  color: black;
   position: relative;
   transition: all 300ms;
   overflow: hidden;
@@ -19644,7 +19644,7 @@ input[type=range]::-webkit-slider-thumb:hover .range-tooltip {
 }
 
 .languageselector {
-  color: #000000;
+  color: black;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -20327,12 +20327,12 @@ input[type=range]::-webkit-slider-thumb:hover .range-tooltip {
 
 .form-control, .product_item-supplier_picker-button {
   padding: 7px 17px;
-  border-radius: 2px;
-  border-color: #808080;
+  border-radius: 2px !important;
+  border-color: #808080 !important;
 }
 .form-control:focus, .product_item-supplier_picker-button:focus {
-  border-color: #B79B6C;
-  box-shadow: 0 0 0 0.25rem rgba(183, 156, 108, 0.486);
+  border-color: #B79B6C !important;
+  box-shadow: 0 0 0 0.25rem rgba(183, 156, 108, 0.486) !important;
 }
 
 @font-face {
@@ -33620,7 +33620,7 @@ footer ul li a {
 }
 
 .navbar {
-  background-color: #000000;
+  background-color: black;
 }
 .navbar .nav-item {
   margin: 0 10px;
@@ -33647,6 +33647,9 @@ footer ul li a {
   transition: opacity 300ms, transform 300ms;
   transform: translate3d(-100%, 0, 0);
 }
+.navbar .nav-item .nav-link.active {
+  color: white !important;
+}
 .navbar .nav-item .nav-link.active::after {
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -33663,12 +33666,12 @@ footer ul li a {
   text-decoration: none;
 }
 .breadcrumb .breadcrumb-item a:not(.active):hover {
-  color: #000000;
+  color: black;
   text-decoration: underline;
 }
 .breadcrumb .breadcrumb-item.active {
   font-weight: bold;
-  color: #000000;
+  color: black;
 }
 
 .languageswitcher {
@@ -34354,7 +34357,7 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: white !important;
 }
 .form-select.is-invalid, .form-control.is-invalid, .is-invalid.product_item-supplier_picker-button {
-  background-image: none;
+  background-image: none !important;
   border-color: #E87D7D !important;
 }
 

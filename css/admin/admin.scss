@@ -68,7 +68,7 @@
     }
 
     &.is-invalid{
-        background-image: none;
+        background-image: none !important;
         border-color: $error_tint_4 !important;
     }
 }

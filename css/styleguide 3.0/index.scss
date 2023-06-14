@@ -60,28 +60,27 @@ body{
    // p{
    //    line-height: 28px;
       
-   //    &.body-regular{
-   //       font-weight: 400;
-   //    }
-   //    &.body-medium{
-   //       font-weight: 500;
-   //    }
-   //    &.body-bold{
-   //       font-weight: 700;
-   //    }
-   //    &.body-link{
-   //       &:hover{
-   //          color: $secondary_tint_3;
-   //          cursor: pointer;
-   //       }
-   //    }
-   //    &.body-underline{
-   //       text-decoration: underline;
-   //    }
-   //    &.body-italic{
-   //       font-style: italic;
-   //    }
-   }
+      &.body-regular{
+         font-weight: 400;
+      }
+      &.body-medium{
+         font-weight: 500;
+      }
+      &.body-bold{
+         font-weight: 700;
+      }
+      &.body-link{
+         &:hover{
+            color: $secondary_tint_3;
+            cursor: pointer;
+         }
+      }
+      &.body-underline{
+         text-decoration: underline;
+      }
+      &.body-italic{
+         font-style: italic;
+      }
 
    a{
       text-decoration: none;
@@ -290,25 +289,6 @@ body{
       text-align: center;
    }
 
-   //  primary button
-   .btn-black{
-      &:hover{
-         cursor: pointer;
-      }
-   }
-
-    .btn-white{
-      border-color: black;
-      color: black;
-
-      &:hover{
-         border-color: black;
-         color: black;
-         background-color: $primary_tint_1;
-      }
-   }  //  secondary button
-
-
    // menu frontend header button
    table:nth-child(3) tbody tr:nth-child(4) td:nth-child(2){
       background-color: $table_background_special;
@@ -325,29 +305,6 @@ body{
       background-color: $table_background_special;
    }
 
-   .navbar{
-      width: 100%;
-
-      ul {
-         list-style: none;
-         padding: 0;
-         margin: 0;
- 
-         li {
-             a {
-                 padding: 10px 14px 5px 14px !important;
-                 margin-bottom: 5px;
-                 display: inline-block;
-                 border-bottom: 2px solid black;
- 
-                 &.nav-active, &:not(.tab-disabled):hover {
-                     border-color: white;
-                 }
-             }
-         }
-     }
-   }
-
    .section-under-navbar{
       height: 40px;
    }
@@ -355,9 +312,6 @@ body{
    //menu backend subheader button
    table:nth-child(3) tbody tr:nth-child(7) td:nth-child(2){
       background-color: $table_background_special;
-   }
-   .tabs a{
-      font-weight: 400 !important;
    }
 
    .main-backend{
@@ -368,9 +322,17 @@ body{
    /* 
       Form Fields
    */
-   .input-radius{
-      border-radius: 2px !important;
+   .product_item-supplier_picker{
+      margin-top: 0px !important;
    }
+
+   .disabled {
+      border-radius: 2px !important;
+      background-color: $primary_tint_4 !important;
+      background-image: url('./lock.svg') !important;
+      background-size: 22px !important;
+      color: $primary_tint_2 !important;
+  }
 
    /* 
       Table Selections
@@ -383,16 +345,6 @@ body{
    /* 
       Table Search filter
    */
-   .activeFilter{
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 500;
-      
-      :hover{
-         color: white !important;
-         background-color: black !important;
-      }
-   }
 
    .icon-position{
       margin-right: 2px;

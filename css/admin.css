@@ -12333,7 +12333,7 @@ footer ul li a {
 }
 
 .navbar {
-  background-color: #000000;
+  background-color: black;
 }
 .navbar .nav-item {
   margin: 0 10px;
@@ -12360,6 +12360,9 @@ footer ul li a {
   transition: opacity 300ms, transform 300ms;
   transform: translate3d(-100%, 0, 0);
 }
+.navbar .nav-item .nav-link.active {
+  color: white !important;
+}
 .navbar .nav-item .nav-link.active::after {
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -12376,12 +12379,12 @@ footer ul li a {
   text-decoration: none;
 }
 .breadcrumb .breadcrumb-item a:not(.active):hover {
-  color: #000000;
+  color: black;
   text-decoration: underline;
 }
 .breadcrumb .breadcrumb-item.active {
   font-weight: bold;
-  color: #000000;
+  color: black;
 }
 
 .languageswitcher {
@@ -13067,7 +13070,7 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: white !important;
 }
 .form-select.is-invalid, .form-control.is-invalid {
-  background-image: none;
+  background-image: none !important;
   border-color: #E87D7D !important;
 }
 

@@ -373,7 +373,7 @@
                     <td>Tertiary</td>
                     <td>
                         <div x-data="{open: false}" class="filterblock">
-                            <a href="#" x-on:click="open = !open" class="btn-blue shadow-sm self-center">
+                            <a href="#" x-on:click="open = !open" class="btn-brown shadow-sm self-center">
                                 <svg class="me-1" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
                                 </svg>
@@ -468,7 +468,7 @@
                                     <!-- Left Side Of Navbar -->
                                     <ul class="navbar-nav me-auto">
                                         <li class="nav-item">
-                                            <a class="nav-link nav-active" href="https://samplestore.webber.nl/dashboard">
+                                            <a class="nav-link active" href="https://samplestore.webber.nl/dashboard">
                                                 Bestellingen
                                             </a>
                                         </li>
@@ -559,10 +559,12 @@
                 <tr>
                     <td>Input error</td>
                     <td>
-                        <input class="mt-1 form-control bg-white is-invalid input-radius" id="team_name" type="text" maxlength="50" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" wire:model="team.name">
-                        <span class="invalid-feedback d-block mt-2" role="alert">
-                            <strong>Dit veld is verplicht</strong>
-                        </span>
+                        <div class="d-flex justify-content-center flex-column" wire:model="data.name.nl" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
+                            <input class="form-control input-radius mt-1 bg-white is-invalid" id="brand_name" type="text" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" maxlength="50" style="margin-top: 0.25rem;" wire_model="" wire:model="data.name.nl">
+                            <span class="invalid-feedback d-block mt-2" role="alert">
+                                <strong>Dit veld is verplicht</strong>
+                            </span>
+                        </div>
                     </td>
                     <td></td> 
                 </tr>
@@ -570,7 +572,7 @@
                     <td>Input readonly</td>
                     <td>
                         <div class="d-flex flex-column">
-                            <select id="brand_id" wire_model="" wire:model="data.brand_id" disabled="disabled" class="bg-white mt-1 form-select input-radius">
+                            <select id="brand_id" wire_model="" wire:model="data.brand_id" disabled="disabled" class="bg-white mt-1 form-select disabled">
                                 <option value="33">AkoCell B.V.</option>
                             </select>
                         </div>
@@ -727,7 +729,8 @@
                                 </ul>
                                 <a href="#" class="multiselectinput-add">
                                     <svg width="18" height="18" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+                                        </path>
                                     </svg>
                                 </a>
                             </div>
@@ -945,10 +948,10 @@
                             <div>
                                 <a href="#" wire:click.prevent="deleteFromFilter('selectedCategories','0')">Overige Wandafwerkingsmaterialen x</a>
                             </div>
-                            <div>
+                            <div class="mt-1">
                                 <a href="#" wire:click.prevent="deleteFromFilter('selectedMaterials','0')">Overige Houtsoorten x</a>
                             </div>
-                            <div>
+                            <div class="mt-1">
                                 <a href="#" wire:click.prevent="deleteFromFilter('selectedColors','0')">Bruin x</a>
                             </div>
                         </div>
