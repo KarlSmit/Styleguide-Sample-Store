@@ -1,5 +1,5 @@
 .extraoptions_popup {
-    border: 1px solid #ced4da;
+    border: 1px solid $primary_tint_3;
     background-color: white;
     right: 0;
     top: 33px;
@@ -8,12 +8,12 @@
     .extraoptions_popup_item {
         padding: 15px;
         display: block;
-        border-bottom: 1px solid #ced4da;
+        border-bottom: 1px solid $primary_tint_3;
         text-decoration: none;
         white-space: nowrap;
 
         &:hover {
-            background-color: $blue;
+            background-color: $secondary_tint_4;
             color: white;
         }
 
@@ -22,8 +22,8 @@
         }
 
         p {
+            @extend .font5;
             margin-bottom: 0;
-            font-size: 0.875rem;
         }
 
         &.extra-red {
@@ -39,7 +39,7 @@
             color: grey;
 
             &:hover {
-                background-color: #d3d3d3;
+                background-color: $primary_tint_3;
                 color: grey;
             }
         }

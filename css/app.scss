@@ -22,7 +22,7 @@ $container-max-widths: (
 );
 
 // Bootstrap
-@import 'common/bootstrap/bootstrap';
+@import 'common/bootstrap';
 
 // Variables
 @import 'variables';
@@ -35,4 +35,3 @@ $container-max-widths: (
 @import "common/range";
 
 @import "front/front";
-

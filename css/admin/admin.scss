@@ -1,0 +1,175 @@
+@import "navigation";
+
+//components
+@import "components/languageswitcher";
+@import "components/adminheader";
+@import "components/filter";
+@import "components/fileupload";
+@import "components/multiselect";
+@import "components/select2";
+@import "components/toggle";
+@import "components/kvk";
+@import "components/extraoptions";
+@import "pages/products";
+
+.respons-message{
+    padding: 24px 0px;
+    z-index: 55;
+
+    &.succes{
+        background-color: $succes_tint_5 !important;
+        border: 1px solid $succes_tint_2 !important;
+        span{
+            color: $succes_tint_2;
+        }
+    }
+    &.error{
+        background-color: $error_tint_5 !important;
+        border: 1px solid $error_tint_2 !important;
+        span{
+            color: $error_tint_2;
+        }
+    }
+}
+
+.submit{
+    z-index: 50;
+    background-color: $primary_tint_5;
+    border: 1px solid $primary_tint_4;
+    padding: 16px 0px;
+
+    .btn-white{
+        margin-left: 10px
+    }
+}
+
+.product_overview_variants{
+    @extend .fw-medium;
+    padding-left: 5px;
+    margin-top: 50px;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: $secondary_tint_5;
+    box-shadow: 0 0 0 3px rgba(183, 156, 108, 0.486);
+}
+
+.form-select, .form-control{
+    @extend .font5;
+    background-color: $primary_tint_5 !important;
+    border: solid 1px $primary_tint_4 !important;
+    border-radius: 2px;
+
+    &.input-white{
+        background-color: white !important;
+    }
+
+    &.is-invalid{
+        background-image: none;
+        border-color: $error_tint_4 !important;
+    }
+}
+
+.form-select{
+    padding: 7px 36px 7px 12px;
+}
+.form-control{
+    padding: 7px 12px;
+}
+
+.adminborder {
+    border: 1px solid $primary_tint_5;
+
+    &-thick {
+        border: 1px solid $primary_tint_4;
+    }
+}
+
+.table.table-bordered {
+    th{
+        vertical-align: top;
+    }
+
+    &.upload-overview{
+        margin-left: 12px !important;
+        width: calc(100% - 24px);
+
+        tbody {
+            tr:nth-child(odd) {
+                td {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+.form-select:disabled {
+    background-color: $primary_tint_4 !important;
+    background-image: url('/public/images/lock.svg');
+    background-size: 22px;
+    color: $primary_tint_2;
+}
+
+.edit-column.with-dots {
+    padding: 0.5rem 0.4rem 0.5rem 0.9rem;
+}
+
+.counter-text {
+    @extend .font5;
+}
+
+.table-checkbox {
+    width: 16px;
+    height: 16px;
+    margin-top: 7px;
+
+    &.overview{
+        width: 33px !important;
+        height: 33px !important;
+    }
+}
+
+.table-wrapper-checkbox {
+    th:nth-child(2), td:nth-child(2) {
+        padding-left: 0;
+    }
+}
+
+.multiselect-checkbox {
+    .form-select {
+        cursor: pointer
+    }
+
+    &.open {
+        .form-select {
+            border-bottom: 0;
+        }
+    }
+
+    .multiselect-checkbox-wrapper {
+        @extend .font5;
+        position: absolute;
+        display: block;
+        width: 100%;
+        padding: 6px 12px;
+        -moz-padding-start: calc(0.75rem - 3px);
+        font-weight: normal;
+        color: $text_color;
+        background-color: white;
+        border: 1px solid $primary_tint_3;
+        border-top: 0;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        max-height: 150px;
+        overflow-y: scroll;
+        z-index: 10;
+
+        label {
+            padding: 5px 0;
+        }
+    }
+}

@@ -1,17 +1,16 @@
 .product_overview {
     &_variants {
-        background-color: $blue;
+        background-color: $secondary_tint_4;
         color: white;
         border-radius: 5px;
         padding: 5px 16px;
-        line-height: 1;
         margin-top: 8px;
     }
 }
 
 .progressline {
-    background-color: #34a134;
-    height: 2px;
+    background-color: $succes_tint_2;
+    height: 4px;
     transition: width 0.3s ease-in-out;
 }
 
@@ -19,7 +18,7 @@
     .block {
         width: 10px;
         height: 10px;
-        background-color: #bdbdbd;
+        background-color: $primary_tint_3;
     }
 
     .redblock {
@@ -36,5 +35,5 @@
 }
 
 .form-control.noreadonly {
-    background-color: #f8fafc !important;
+    background-color: $primary_tint_5 !important;
 }

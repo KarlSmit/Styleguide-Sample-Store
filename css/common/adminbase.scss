@@ -1,0 +1,335 @@
+$base: 16;
+
+@function calculateRem($size) {
+    $remSize: calc($size / $base);
+    @return #{$remSize}rem;
+}
+
+@mixin fontSize($size, $line_height) {
+    font-size: #{$size}px; //Fallback in px
+    line-height: #{$line_height}px; //Fallback in px
+    font-size: calculateRem($size);
+    line-height: calculateRem($line_height);
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    @extend .primary-font;
+    font-size: #{$base}px;
+}
+
+.primary-font{
+    font-family: $font-family-sans-serif;
+    color: $text_color; 
+    font-weight: normal;
+}
+
+.font1 {
+    @include fontSize(44, 48);
+}
+
+.font2 {
+    @include fontSize(32, 38);
+}
+
+.font3 {
+    @include fontSize(22, 28);
+}
+
+.font4 {
+    @include fontSize(18, 28);
+}
+
+.font5 {
+    @include fontSize(16, 26);
+}
+
+.font6 {
+    @include fontSize(12, 16);
+}
+
+body {
+    @extend .primary-font;
+    @include fontSize(18, 28);
+    background-color: white;
+    padding-bottom: 40px;
+}
+
+// fw-normal already exist in bootstrap
+.fw-medium{
+    font-weight: 500;
+}
+// fw-bold already exist in bootstrap
+
+.text-hover-brown{
+    color: $text_color;
+    &:hover{
+        color: $secondary_tint_5;
+    }
+}
+// text-decoration-underline already exist in bootstrap
+// fst-italic already exist in bootstrap
+
+a {
+    @extend .primary-font;
+    text-decoration: underline;
+    color: $text_color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-sans-serif;
+    font-weight: bold;
+}
+
+.font-heading {
+    @extend .font5;
+    font-weight: bold;
+}
+
+.color-brown {
+    color: $secondary_tint_4;
+}
+
+.bg-light {
+    background-color: $primary_tint_5 !important;
+}
+
+.btn {
+    @extend .font5;
+    font-family: $font-family-sans-serif;
+    padding: 7px 11px;
+    align-content: center;
+    border-radius: 0;
+    
+    &-small {
+        @extend .font6;
+    }
+
+    &-big{ 
+        @extend .font4;
+        padding: 14px 22px;
+    }
+}
+
+.btn-black {
+    @extend .btn;
+    background-color: black;
+    color: white;
+    transition: all 200ms;
+    transition-timing-function: ease-out;
+
+    &:hover {
+        background-color: $secondary_tint_5;
+        color: white;
+    }
+}
+
+.btn-brown {
+    @extend .btn;
+    background-color: $secondary_tint_4;
+    color: white;
+
+    &:hover {
+        color: white;
+        background-color: $secondary_tint_3;
+    }
+}
+
+.btn-red {
+    @extend .btn;
+    background-color: red;
+    color: white;
+    box-shadow: rgb(10 10 10 / 25%) 0px 4px 0px -2px;
+
+    &:hover {
+        color: white;
+        background-color: red;
+    }
+}
+
+.btn-white {
+    @extend .btn;
+    border-color: black;
+    color: black;
+    background-color: white;
+    white-space: nowrap;
+    transition: all 150ms ease-in-out 0s;
+
+    &:hover {
+        border-color: black;
+        color: black;
+        background-color: $primary_tint_5;
+    }
+
+    &.filter {
+        border-color: rgb(200, 200, 200);
+        color: rgb(51, 51, 51);
+
+        &:hover {
+            background-color: rgb(250, 250, 250);
+        }
+
+        svg {
+            transition: all 150ms ease-in-out 0s;
+            margin-right: 0px;
+            width: 0px;
+            transform: scale(0);
+            opacity: 0;
+        }
+    }
+
+    &.selected {
+        &.filter {
+            border-color: $secondary_tint_4;
+            color: $secondary_tint_4;
+            background-color: rgb(240, 246, 255);
+        }
+
+        svg {
+            margin-right: 0.25rem;
+            width: 1.5rem;
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    &.no-outline {
+        outline: 0;
+        box-shadow: none;
+
+        &:hover, &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+}
+
+.btn-white-red {
+    @extend .btn-white;
+    color: red;
+    border-color: red;
+
+    &:hover {
+        color: red;
+        border-color: red;
+    }
+}
+
+.btn-white-complete {
+    @extend .btn;
+
+    background-color: white;
+    color: $text_color;
+}
+
+.btn-disabled {
+    background-color: white;
+    color: grey;
+    border-color: grey;
+
+    &:hover {
+        background-color: $primary_tint_4;
+        color: grey;
+        border-color: grey;
+    }
+}
+
+.table {
+    margin-bottom: 0;
+    @extend .font5;
+
+    tbody {
+        tr:nth-child(odd) {
+            td {
+                background-color: $admingraybackground;
+            }
+        }
+    }
+
+    & > :not(:first-child) {
+        border-color: $primary_tint_4;
+        border-top: 1px;
+    }
+
+    tr {
+        th {
+            @extend .font4;
+            line-height: 24px !important;   
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: $text_color;
+        }
+
+        td, th {
+            &:first-child {
+                padding-left: 30px;
+            }
+
+            border-color: $primary_tint_5;
+        }
+    }
+}
+
+.table-overview{
+    tbody tr:last-child {
+        border-bottom: none;
+    }
+    td, th {
+        &:first-child {
+            border: none;
+        }
+        &:last-child {
+            border: none;
+        }
+    }
+}
+
+label {
+    @extend .font4;
+    font-weight: bold;
+
+    &-big{
+        @extend .font3;
+    }
+}
+
+.languageinput {
+    .languageswitcher {
+        top: calc((100% - 20px) / 2);
+        right: 10px;
+    }
+}
+
+.ss-card {
+    box-sizing: inherit;
+    background-color: white;
+    position: relative;
+    box-shadow: rgb(10 10 10 / 5%) 0px 5px 0px -2px;
+    border: 1px solid $primary_tint_4;
+}
+
+.object-contain {
+    object-fit: contain;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.alert-ss {
+    background-color: $secondary_tint_4;
+    margin-top: 80px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.is-custom-invalid {
+    border: 1px solid $error_tint_3;
+    border-radius: 0.25rem;
+}

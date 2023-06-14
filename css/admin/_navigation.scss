@@ -2,27 +2,66 @@
     background-color: $navigationColor;
 
     .nav-item {
+        margin: 0 10px;
+        overflow: hidden;
         .nav-link {
-            color: white;
-            font-size: 1rem;
-        }
+                    @extend .font4;
+                    padding: 0;
+                    font-weight: normal;
+                    text-decoration: none;
+                    color: white;
+                    position: relative;
+                    transition: all 300ms;
+                    overflow: hidden;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0;
+                        width: 100%;
+                        height: 1.5px;
+                        background-color: white;
+                        opacity: 0;
+                        transition: opacity 300ms, transform 300ms;
+                        transform: translate3d(-100%, 0, 0);
+                    }
+
+                    &.active {
+                        @extend .fw-medium;
+                        &::after {
+                            opacity: 1;
+                            transform: translate3d(0, 0, 0);
+                        }
+                    }
+
+                    &:hover {
+                        color: white;
+                    }
+
+                    &:hover::after,
+                    &:focus::after {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
     }
 }
 
 .breadcrumb {
     .breadcrumb-item {
+        @extend .font5;
         a {
-            font-size: 1rem;
             text-decoration: none;
 
             &:not(.active):hover {
-                color: #121212;
+                color: $navigationColor;
                 text-decoration: underline;
             }
         }
         &.active {
-            font-weight: 600;
-            color: #121212;
+            font-weight: bold;
+            color: $navigationColor;
         }
     }
 }

@@ -1,0 +1,52 @@
+.select-2 {
+    width: 234px !important;
+}
+
+.select2-selection{
+    background-color: $primary_tint_5 !important;
+    border-color: $primary_tint_4 !important;
+    border-radius: 2px !important;
+    padding: 7px 40px 7px 7px !important;
+    cursor: pointer !important; 
+    background-image: url('/public/images/add-item.svg');
+    background-repeat: no-repeat;
+    background-position: right, center;
+    background-position: right 10px bottom 50%;
+
+    ul.select2-selection__rendered {
+        outline-width: 30px !important;
+        .select2-selection__choice {
+            @extend .font5;
+            background-color: $secondary_tint_5 !important;
+            border-radius: 50px !important;
+            border: none !important;
+            color: white !important;
+            padding-left: 0px !important;
+            padding: 0px 15px 0px 8px !important;
+            margin-top: 0px;
+            margin-left: 5px;
+    
+            &:hover{
+                cursor: pointer !important;
+                background-color: black !important;
+                color: white !important;
+            }
+    
+            .select2-selection__choice__remove{
+                color: white !important;
+                border: none;
+                padding: 0 8px;
+                position: absolute;
+                left: auto !important;
+                right: 0 !important;
+                top: 1px;
+    
+                &:hover{
+                    background-color: transparent !important;
+                    cursor: pointer !important;
+                    color: white !important;
+                }
+            }
+        }
+    }
+}

@@ -23,65 +23,65 @@ body{
       line-height: 28px;
    }
 
-   h1, h2, h3, h4, h5, h6{
-      font-weight: 400;
-   }
+   // h1, h2, h3, h4, h5, h6{
+   //    font-weight: 400;
+   // }
    
-   h1{
-      font-size: 44px;
-      line-height: 48px;
-   }
+   // h1{
+   //    font-size: 44px;
+   //    line-height: 48px;
+   // }
    
-   h2{
-      font-size: 32px;
-      line-height: 38px;
-   }
+   // h2{
+   //    font-size: 32px;
+   //    line-height: 38px;
+   // }
    
-   h3{
-      font-size: 22px;
-      line-height: 28px;
-   }
+   // h3{
+   //    font-size: 22px;
+   //    line-height: 28px;
+   // }
    
-   h4{
-      font-size: 18px;
-      line-height: 28px;
-   }
+   // h4{
+   //    font-size: 18px;
+   //    line-height: 28px;
+   // }
    
-   h5{
-      font-size: 16px;
-      line-height: 26px;
-   }
+   // h5{
+   //    font-size: 16px;
+   //    line-height: 26px;
+   // }
    
-   h6{
-      font-size: 12px;
-      line-height: 22px;
-   }
+   // h6{
+   //    font-size: 12px;
+   //    line-height: 22px;
+   // }
    
-   p{
-      line-height: 28px;
+   // p{
+   //    line-height: 28px;
       
-      &.body-regular{
-         font-weight: 400;
-      }
-      &.body-medium{
-         font-weight: 500;
-      }
-      &.body-bold{
-         font-weight: 700;
-      }
-      &.body-link{
-         &:hover{
-            color: $secondary_tint_3;
-            cursor: pointer;
-         }
-      }
-      &.body-underline{
-         text-decoration: underline;
-      }
-      &.body-italic{
-         font-style: italic;
-      }
-   }
+   //    &.body-regular{
+   //       font-weight: 400;
+   //    }
+   //    &.body-medium{
+   //       font-weight: 500;
+   //    }
+   //    &.body-bold{
+   //       font-weight: 700;
+   //    }
+   //    &.body-link{
+   //       &:hover{
+   //          color: $secondary_tint_3;
+   //          cursor: pointer;
+   //       }
+   //    }
+   //    &.body-underline{
+   //       text-decoration: underline;
+   //    }
+   //    &.body-italic{
+   //       font-style: italic;
+   //    }
+   // }
 
    a{
       text-decoration: none;
@@ -266,19 +266,19 @@ body{
 
       /* succes colors */
       &.succes-lightest{
-         background-color: #D9F7D4;
+         background-color: $succes_tint_5;
       }
       &.succes-lighter{
-         background-color: #8CE87D;
+         background-color: $succes_tint_4;
       }
       &.succes-basis{
-         background-color: #3FD926;
+         background-color: $succes_tint_3;
       }
       &.succes-darker{
-         background-color: #32AE1E;
+         background-color: $succes_tint_2;
       }
       &.succes-darkest{
-         background-color: #268217;
+         background-color: $succes_tint_1;
       }
    }
    

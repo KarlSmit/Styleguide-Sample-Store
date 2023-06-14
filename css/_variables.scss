@@ -2,14 +2,7 @@
 $body-bg: #f8fafc;
 
 // Typography
-//$font-family-sans-serif: 'Palanquin', sans-serif;
-//$font-family-heading: 'Euclid Flex', sans-serif;
-
-//$font-family-sans-serif: 'Graphik', sans-serif;
-//$font-family-heading: 'Produkt', sans-serif;
 $font-family-sans-serif: 'DM Sans';
-$font-family-heading: 'DM Sans';
-$font-front: 'DM Sans';
 $font-size-base: 1rem;
 $line-height-base: 1.6;
 
@@ -18,29 +11,15 @@ $line-height-base: 1.6;
     --bs-body-bg: '#ffffff' !important;
 }
 
-// OldColors
-//$bluegreen: #0098B3;
-//$bluegreen: rgb(0, 0, 164);
-//$darkblue: #00779B;
-//$darkblue: rgb(0, 0, 164);
-//$blue: #488EC8;
-//$blue: rgb(0, 0, 164);
 // Colors
-//$bluegreen: #0098B3;
-$bluegreen: #B49764;
-//$darkblue: #00779B;
-$darkblue: #B49764;
-//$blue: #488EC8;
-$blue: #B49764;
-$blueHover: #ab8f54;
 $navigationColor: #000000;
-$brown: #322923;
+$text_color: #000000;
 $admingraybackground: #fafafa;
 
-$primary_tint_1: #000000;
-$primary_tint_2: #4D4D4D;
-$primary_tint_3: #808080;
-$primary_tint_4: #B3B3B3;
+$primary_tint_1: #2A2A2A;
+$primary_tint_2: #808080;
+$primary_tint_3: #B3B3B3;
+$primary_tint_4: #dee2e6;
 $primary_tint_5: #F4F4F4;
 
 $secondary_tint_1: #7A5921;
@@ -49,21 +28,26 @@ $secondary_tint_3: #ab8f54;
 $secondary_tint_4: #B49764;
 $secondary_tint_5: #B79B6C;
 
-$gray_tint_1: #F4F4F4;
-$gray_tint_2: #B3B3B3;
-$gray_tint_3: #808080;
-$gray_tint_4: #666666;
-$gray_tint_5: #4D4D4D;
+$succes_tint_1: #268217;
+$succes_tint_2: #34a134;
+$succes_tint_3: #3FD926;
+$succes_tint_4: #8CE87D;
+$succes_tint_5: #D9F7D4;
 
-$front_text_color: #000000;
+$warning_tint_1: #907A09;
+$warning_tint_2: #C0A30C;
+$warning_tint_3: #F0CC0F;
+$warning_tint_4: #F6E06F;
+$warning_tint_5: #FCF5CF;
 
-//Standard colors
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+$error_tint_1: #821717;
+$error_tint_2: #AE1E1E;
+$error_tint_3: #e3342f;
+$error_tint_4: #E87D7D;
+$error_tint_5: #F7D4D4;
+
+$info_tint_1: #235681;
+$info_tint_2: #3075AE;
+$info_tint_3: #488EC8;
+$info_tint_4: #76ACD9;
+$info_tint_5: #A7CFF0;

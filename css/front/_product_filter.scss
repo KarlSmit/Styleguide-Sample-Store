@@ -1,29 +1,34 @@
 .product_filter {
+    input[type="radio"]:not(.filter-block-color),
     input[type="checkbox"]:not(.filter-block-color) {
         -webkit-appearance: none;
         appearance: none;
         width: 16px;
         height: 16px;
-        border: 1px solid #ddd;
+        border: 1px solid $primary_tint_4;
         border-radius: 50%;
-        background: #fff no-repeat center center;
+        background: white no-repeat center center;
     }
 
-    input:where([type="checkbox"]):where(:active:not(:disabled), :focus, :not(.filter_block-color)) {
-        border-color: #696;
+    input:where([type="checkbox"]):where(:active:not(:disabled), :focus, :not(.filter_block-color)),
+    input:where([type="radio"]):where(:active:not(:disabled), :focus, :not(.filter_block-color)) {
+        border-color: none;
         outline: none;
     }
 
-    input:where([type="checkbox"]):not(.filter_block-color):disabled {
-        background: #eee;
+    input:where([type="checkbox"]):not(.filter_block-color):disabled,
+    input:where([type="radio"]):not(.filter_block-color):disabled {
+        background: $primary_tint_5;
     }
 
-    input[type="checkbox"]:not(.filter_block-color) {
+    input[type="checkbox"]:not(.filter_block-color),
+    input[type="radio"]:not(.filter_block-color) {
 
 
     }
 
-    input[type="checkbox"]:not(.filter_block-color) {
+    input[type="checkbox"]:not(.filter_block-color),
+    input[type="radio"]:not(.filter_block-color) {
         background-size: 0;
         cursor: pointer;
     }
@@ -36,11 +41,18 @@
         height: 30px;
 
         &:hover {
-            border-color: $gray_tint_2;
+            border-color: $primary_tint_3;
+        }
+
+        &.white {
+            input, div {
+                border: 1px solid $primary_tint_2;
+            }
         }
     }
 
-    input[type="checkbox"]:not(.filter_block-color):checked {
+    input[type="checkbox"]:not(.filter_block-color):checked,
+    input[type="radio"]:not(.filter_block-color):checked {
         //background-image: url('/public/images/checkbox.svg');
         background-size: 10px 10px;
         background-repeat: no-repeat;
@@ -48,50 +60,41 @@
     }
 
     label {
-        font-weight: 400;
-        //@include fontSize(16, 20);
+        font-weight: normal;
     }
 
     .activeFilter {
+        @extend .font5;
         flex-wrap: wrap;
         gap: 10px;
-        @include fontSize(16, 20);
-
-        div {
-            color: white;
-            flex-grow: 0;
-            flex-shrink: 0;
-            padding: 7px 13px 7px 20px;
-            background-color: $secondary_tint_3;
-            border-radius: 50px;
-        }
 
         a {
             color: white;
             flex-grow: 0;
             flex-shrink: 0;
-            padding-left: 7px;
-            padding-right: 7px;
+            padding: 7px 13px 7px 20px;
+            background-color: $secondary_tint_5;
+            border-radius: 50px;
 
             &:hover {
-                color: black;
+                background-color: black;
             }
         }
     }
 
     hr {
-        background-color: #F4F4F4;
+        background-color: $primary_tint_5;
         opacity: 1;
         margin: 15px 0 13px 0;
     }
 
     .clear-filters-button {
-        @include fontSize(16, 26);
+        @extend .font5;
         text-decoration: underline;
-        font-weight: 400;
+        font-weight: normal;
 
         &:hover {
-            color: $secondary-tint-3;
+            color: $secondary_tint_5;
         }
     }
 
@@ -99,29 +102,24 @@
         margin-bottom: 41px;
 
         .filter_block-heading {
+            @extend .font3;
             margin-bottom: 19px;
             padding-right: 16px;
-
-            h5 {
-                @include fontSize(22, 28);
-                font-weight: bold;
-                color: #000000;
-            }
         }
 
         .filter_block-toggle {
+            @extend .font4;
             text-decoration: none;
-            color: $front_text_color;
-            font-size: 20px;
+            color: $text_color;
         }
 
         .filter_block-multiple_items {
             .filter_block-multiple_items-item {
-                border-top: 1px solid #F4F4F4;
+                border-top: 1px solid $primary_tint_5;
                 padding: 6px 16px;
 
                 &:last-child {
-                    border-bottom: 1px solid #F4F4F4;
+                    border-bottom: 1px solid $primary_tint_5;
                 }
             }
         }
@@ -130,24 +128,41 @@
     .filter-level-2,
     .filter-level-3,
     .filter-level-4 {
-        @include fontSize(18, 22);
-
-        &:hover {
-            color: $secondary_tint_3;
+        &:not(.no-hover):hover {
+            color: $secondary_tint_5;
         }
     }
 
     .filter-level-2 {
-        color: #000000;
+        @extend .font4;
+        color: $text_color;
+
+        &.filter-selected {
+            color: $text_color;
+            font-weight: bold;
+        }
     }
 
     .filter-level-3 {
+        @extend .font4;
+        @extend .fw-medium;
         padding-left: 31px !important;
-        color: $gray-tint-4;
+        color: $primary_tint_2;
+
+        &.filter-selected {
+            color: $primary_tint_2;
+            font-weight: bold;
+        }
     }
 
     .filter-level-4 {
-        color: $gray-tint-3;
+        @extend .font5;
+        color: $primary_tint_2;
+
+        &.filter-selected {
+            color: $primary_tint_2;
+            font-weight: bold;
+        }
     }
 
     .filter-level-4, .filter-level-5 {
@@ -160,17 +175,37 @@
 
     .filter-level-5 {
         label {
-            color: $front-text_color;
-            @include fontSize(16, 26);
+            @extend .font5;
+            color: $text-color;
 
             &:hover {
-                color: $secondary_tint_3;
+                color: $secondary_tint_5;
 
                 input {
                     border-color: black;
                 }
             }
+
+            &.filter-selected {
+                color: $text-color;
+                font-weight: bold;
+            }
         }
+
+        &.filter-selected {
+            color: $text-color;
+            font-weight: bold;
+
+            label {
+                font-weight: bold;
+                color: $text-color;
+            }
+        }
+    }
+
+    .filter-level-6 {
+        @extend .font6;
+        color: $text_color;
     }
 
     .latest-row {
@@ -187,7 +222,7 @@
             padding: 0;
             margin: 0 8px 0 0;
             border-radius: 50%;
-            border: 1px solid $gray-tint_2;
+            border: 1px solid $primary_tint_3;
             transition: border-color .15s linear 0s;
             appearance: none;
         }
@@ -204,7 +239,7 @@
         .slider {
             height: 7px;
             position: relative;
-            background: $secondary_tint_3;
+            background: $secondary_tint_5;
             border-radius: 5px;
         }
 
@@ -213,7 +248,7 @@
             left: 25%;
             right: 25%;
             border-radius: 5px;
-            background: #F3F3F3;
+            background: $primary_tint_5;
             position: absolute;
         }
 
@@ -236,7 +271,7 @@
             height: 17px;
             width: 17px;
             border-radius: 50%;
-            background: $secondary_tint_3;
+            background: $secondary_tint_5;
             pointer-events: auto;
             -webkit-appearance: none;
             box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
@@ -247,7 +282,7 @@
             width: 17px;
             border: none;
             border-radius: 50%;
-            background: $secondary_tint_3;
+            background: $secondary_tint_5;
             pointer-events: auto;
             -moz-appearance: none;
             box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
@@ -255,7 +290,7 @@
 
         .pos {
             position: absolute;
-            background-color: #B3B3B3;
+            background-color: $primary_tint_3;
             width: 1px;
             height: 7px;
             top: -7px;
@@ -269,7 +304,6 @@
         display: inline-flex;
         width: 32px;
         height: 32px;
-        //margin-right: 13px;
         position: relative;
 
         .filter_block-colors-color {
@@ -296,8 +330,8 @@
                             45deg,
                             white,
                             white 5px,
-                            $gray_tint_3 5px,
-                            $gray_tint_3 10px,
+                            $primary_tint_2 5px,
+                            $primary_tint_2 10px,
                     );
                 }
             }

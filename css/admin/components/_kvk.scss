@@ -1,5 +1,5 @@
 .kvk_popup {
-    border: 1px solid #ced4da;
+    border: 1px solid $primary_tint_4;
     max-height: 400px;
     min-width: 300px;
     background-color: white;
@@ -9,11 +9,11 @@
     .kvk_popup_item {
         padding: 15px;
         display: block;
-        border-bottom: 1px solid #ced4da;
+        border-bottom: 1px solid $primary_tint_4;
         text-decoration: none;
 
         &:hover {
-            background-color: $blue;
+            background-color: $secondary_tint_4;
             color: white;
         }
 
@@ -22,8 +22,8 @@
         }
 
         p {
+            @extend .font5;
             margin-bottom: 0;
-            font-size: 0.875rem;
         }
     }
 }

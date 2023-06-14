@@ -60,11 +60,11 @@
 }
 
 .bg-darkblue {
-    background-color: $darkblue;
+    background-color: $secondary_tint_4;
 }
 
 .bg-indigo {
-  background-color: #6574cd !important;
+  background-color: $secondary_tint_4 !important;
 }
 
 .h-5 {
@@ -87,7 +87,6 @@
 }
 
 .bg-light {
-  //background: #f3f4f6 !important;
   background: $admingraybackground !important;
 }
 
@@ -98,7 +97,7 @@
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: #f9fafb;
+  background-color: $primary_tint_5;
   border-top: 0;
 }
 
@@ -108,8 +107,16 @@
 
 .dropdown-menu {
   width: 220px;
+  right: 1px !important;
+
+  .dropdown-item{
+    &:focus{
+      background-color: $primary_tint_5;
+      color: $text_color;
+    }
+  }
 }
 
 .small {
-  font-size: .875rem !important;
+  @extend .font5;
 }
