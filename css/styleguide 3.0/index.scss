@@ -23,64 +23,64 @@ body{
       line-height: 28px;
    }
 
-   h1, h2, h3, h4, h5, h6{
-      font-weight: 400;
-   }
+   // h1, h2, h3, h4, h5, h6{
+   //    font-weight: 400;
+   // }
    
-   h1{
-      font-size: 44px;
-      line-height: 48px;
-   }
+   // h1{
+   //    font-size: 44px;
+   //    line-height: 48px;
+   // }
    
-   h2{
-      font-size: 32px;
-      line-height: 38px;
-   }
+   // h2{
+   //    font-size: 32px;
+   //    line-height: 38px;
+   // }
    
-   h3{
-      font-size: 22px;
-      line-height: 28px;
-   }
+   // h3{
+   //    font-size: 22px;
+   //    line-height: 28px;
+   // }
    
-   h4{
-      font-size: 18px;
-      line-height: 28px;
-   }
+   // h4{
+   //    font-size: 18px;
+   //    line-height: 28px;
+   // }
    
-   h5{
-      font-size: 16px;
-      line-height: 26px;
-   }
+   // h5{
+   //    font-size: 16px;
+   //    line-height: 26px;
+   // }
    
-   h6{
-      font-size: 12px;
-      line-height: 22px;
-   }
+   // h6{
+   //    font-size: 12px;
+   //    line-height: 22px;
+   // }
    
-   p{
-      line-height: 28px;
+   // p{
+   //    line-height: 28px;
       
-      &.body-regular{
-         font-weight: 400;
-      }
-      &.body-medium{
-         font-weight: 500;
-      }
-      &.body-bold{
-         font-weight: 700;
-      }
-      &.body-link{
-         &:hover{
-            color: $secondary_tint_3;
-            cursor: pointer;
-         }
-      }
-      &.body-underline{
-         text-decoration: underline;
-      }
-      &.body-italic{
-         font-style: italic;
-      }
+   //    &.body-regular{
+   //       font-weight: 400;
+   //    }
+   //    &.body-medium{
+   //       font-weight: 500;
+   //    }
+   //    &.body-bold{
+   //       font-weight: 700;
+   //    }
+   //    &.body-link{
+   //       &:hover{
+   //          color: $secondary_tint_3;
+   //          cursor: pointer;
+   //       }
+   //    }
+   //    &.body-underline{
+   //       text-decoration: underline;
+   //    }
+   //    &.body-italic{
+   //       font-style: italic;
+   //    }
    }
 
    a{
@@ -181,19 +181,19 @@ body{
 
       /* primary colors */
       &.primary-lightest{
-         background-color: $gray_tint_1;
+         background-color: $primary_tint_5;
       }
       &.primary-lighter{
-         background-color: $gray_tint_2;
+         background-color: $primary_tint_4;
       }
       &.primary-basis{
-         background-color: $gray_tint_3;
+         background-color: $primary_tint_3;
       }
       &.primary-darker{
-         background-color: $gray_tint_5;
+         background-color: $primary_tint_2;
       }
       &.primary-darkest{
-         background-color: black;
+         background-color: $primary_tint_1;
       }
 
       /* secondary colors */
@@ -215,70 +215,70 @@ body{
 
       /* warning colors */
       &.warning-lightest{
-         background-color: #FCF5CF;
+         background-color: $warning_tint_5;
       }
       &.warning-lighter{
-         background-color: #F6E06F;
+         background-color: $warning_tint_4;
       }
       &.warning-basis{
-         background-color: #F0CC0F;
+         background-color: $warning_tint_3;
       }
       &.warning-darker{
-         background-color: #C0A30C;
+         background-color: $warning_tint_2;
       }
       &.warning-darkest{
-         background-color: #907A09;
+         background-color: $warning_tint_1;
       }
 
       /* errors colors */
       &.error-lightest{
-         background-color: #F7D4D4;
+         background-color: $error_tint_5;
       }
       &.error-lighter{
-         background-color: #E87D7D;
+         background-color: $error_tint_4;
       }
       &.error-basis{
-         background-color: #D92626;
+         background-color: $error_tint_3;
       }
       &.error-darker{
-         background-color: #AE1E1E;
+         background-color: $error_tint_2;
       }
       &.error-darkest{
-         background-color: #821717;
+         background-color: $error_tint_1;
       }
 
       /* info colors */
       &.info-lightest{
-         background-color: #A7CFF0;
+         background-color: $info_tint_5;
       }
       &.info-lighter{
-         background-color: #76ACD9;
+         background-color: $info_tint_4;
       }
       &.info-basis{
-         background-color: #488EC8;
+         background-color: $info_tint_3;
       }
       &.info-darker{
-         background-color: #3075AE;
+         background-color: $info_tint_2;
       }
       &.info-darkest{
-         background-color: #235681
+         background-color: $info_tint_1;
       }
 
       /* succes colors */
       &.succes-lightest{
-         background-color: #D9F7D4;
+         background-color: $succes_tint_5;
       }
       &.succes-lighter{
-         background-color: #8CE87D;
+         background-color: $succes_tint_4;
       }
       &.succes-basis{
-         background-color: #3FD926;
+         background-color: $succes_tint_3;
       }
       &.succes-darker{
-         background-color: #32AE1E;
+         background-color: $succes_tint_2;
       }
       &.succes-darkest{
-         background-color: #268217;
+         background-color: $succes_tint_1;
       }
    }
    
@@ -297,17 +297,17 @@ body{
       }
    }
 
-   //  secondary button
-   .btn-white{
+    .btn-white{
       border-color: black;
       color: black;
 
       &:hover{
          border-color: black;
          color: black;
-         background-color: $gray_tint_1;
+         background-color: $primary_tint_1;
       }
-   }
+   }  //  secondary button
+
 
    // menu frontend header button
    table:nth-child(3) tbody tr:nth-child(4) td:nth-child(2){
