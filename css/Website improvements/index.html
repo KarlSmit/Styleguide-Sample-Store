@@ -276,7 +276,7 @@
                     <td>Productcategoriën</td>
                     <td class="filter_block">
                         <div class="multiselect position-relative bg-white" style="z-index: 35" @click.outside="closeAndRest()" x-data="multiselect_materials()">
-                            <div class="mt-1 form-control bg-white multiselectinput input-radius" @click.prevent="openSelect = !openSelect">
+                            <div class="mt-1 form-control bg-white multiselectinput" @click.prevent="openSelect = !openSelect">
                                 <ul class="multiselect-list">
                                     <template x-for="select in selected">
                                         <li class="multiselect-list-item">
@@ -317,7 +317,7 @@
                 <tr>
                     <td>Variantnaam</td>
                     <td>
-                        <input class="form-control bg-white is-invalid input-radius error-input" id="team_name" type="text" maxlength="50" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" wire:model="team.name">
+                        <input class="form-control bg-white is-invalid error-input" id="team_name" type="text" maxlength="50" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" wire_model="" wire:model="team.name">
                         <span class="invalid-feedback d-block error-input-message" role="alert">
                             <strong>Naam is verplicht</strong>
                         </span>

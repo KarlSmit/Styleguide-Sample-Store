@@ -34351,7 +34351,7 @@ input[type=number]::-webkit-inner-spin-button {
 .form-select, .form-control, .product_item-supplier_picker-button {
   background-color: #F4F4F4 !important;
   border: solid 1px #dee2e6 !important;
-  border-radius: 2px;
+  border-radius: 2px !important;
 }
 .form-select.input-white, .form-control.input-white, .input-white.product_item-supplier_picker-button {
   background-color: white !important;
@@ -34359,6 +34359,10 @@ input[type=number]::-webkit-inner-spin-button {
 .form-select.is-invalid, .form-control.is-invalid, .is-invalid.product_item-supplier_picker-button {
   background-image: none !important;
   border-color: #E87D7D !important;
+}
+.form-select.is-invalid:focus, .form-control.is-invalid:focus, .is-invalid.product_item-supplier_picker-button:focus {
+  border-color: #AE1E1E !important;
+  box-shadow: 0 0 0 3px rgba(231, 27, 0, 0.356) !important;
 }
 
 .form-select {

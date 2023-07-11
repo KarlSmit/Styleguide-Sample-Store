@@ -61,7 +61,7 @@
     @extend .font5;
     background-color: $primary_tint_5 !important;
     border: solid 1px $primary_tint_4 !important;
-    border-radius: 2px;
+    border-radius: 2px !important;
 
     &.input-white{
         background-color: white !important;
@@ -70,6 +70,11 @@
     &.is-invalid{
         background-image: none !important;
         border-color: $error_tint_4 !important;
+
+        &:focus{
+            border-color: $error_tint_2 !important;
+            box-shadow: 0 0 0 3px rgba(231, 27, 0, 0.356) !important;
+        }
     }
 }
 

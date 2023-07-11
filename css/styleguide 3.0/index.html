@@ -552,7 +552,7 @@
                 <tr>
                     <td>Input</td>
                     <td>
-                        <input type="text" wire:model.debounce.250ms="search" class="form-control input-radius" placeholder="Zoek in de producten">
+                        <input type="text" wire:model.debounce.250ms="search" class="form-control" placeholder="Zoek in de producten">
                     </td>
                     <td></td> 
                 </tr>
@@ -560,7 +560,7 @@
                     <td>Input error</td>
                     <td>
                         <div class="d-flex justify-content-center flex-column" wire:model="data.name.nl" x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
-                            <input class="form-control input-radius mt-1 bg-white is-invalid" id="brand_name" type="text" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" maxlength="50" style="margin-top: 0.25rem;" wire_model="" wire:model="data.name.nl">
+                            <input class="form-control mt-1 bg-white is-invalid" id="brand_name" type="text" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" maxlength="50" style="margin-top: 0.25rem;" wire_model="" wire:model="data.name.nl">
                             <span class="invalid-feedback d-block mt-2" role="alert">
                                 <strong>Dit veld is verplicht</strong>
                             </span>
@@ -701,14 +701,14 @@
                 <tr>
                     <td>Input dropdown standard</td>
                     <td>
-                        <div class="d-flex flex-column">
-                            <select id="indoor_outdoor" wire_model="" wire:model="data.indoor_outdoor" class="bg-white mt-1 form-select input-radius">
-                                <option value="" disabled="">Kies</option>
-                                <option value="indoor">Binnen</option>
-                                <option value="outdoor">Buiten</option>
-                                <option value="both">Binnen/Buiten</option>
-                            </select>
-                        </div>
+                        <select id="" wire_model="" wire:model="variants.0.patternsize" style="margin-top: 0rem !important" class="form-select bg-white mt-1 select-standard">
+                            <option value="" disabled="">interface_common.choose</option>
+                            <option value="micro">Micropatroon</option>
+                            <option value="small">Klein Patroon</option>
+                            <option value="medium">Medium Patroon</option>
+                            <option value="large">Groot Patroon</option>
+                            <option value="extralarge">Extra Groot Patroon</option>
+                        </select>
                     </td>
                     <td></td>                                               
                 </tr>
@@ -716,7 +716,7 @@
                     <td>Input dropdown with categories</td>
                     <td>
                         <div class="multiselect position-relative bg-white" style="z-index: 35" @click.outside="closeAndRest()" x-data="multiselect_materials()">
-                            <div class="mt-1 form-control bg-white multiselectinput input-radius" @click.prevent="openSelect = !openSelect">
+                            <div class="mt-1 form-control bg-white multiselectinput" @click.prevent="openSelect = !openSelect">
                                 <ul class="multiselect-list">
                                     <template x-for="select in selected">
                                         <li class="multiselect-list-item">
@@ -755,7 +755,7 @@
                 <tr>
                     <td>Textarea</td>
                     <td>
-                        <textarea id="product_text" wire_model="" wire:model.defer="data.text.nl" x-ref="countme" maxlength="5000" x-on:keyup="count = $refs.countme.value.length" class="form-control bg-white mt-1 input-radius" rows="5"></textarea>
+                        <textarea id="product_text" wire_model="" wire:model.defer="data.text.nl" x-ref="countme" maxlength="5000" x-on:keyup="count = $refs.countme.value.length" class="form-control bg-white mt-1" rows="5"></textarea>
                     </td>
                     <td></td>                                               
                 </tr>
@@ -974,11 +974,11 @@
                     <td class="filter_block">
                         <div class="w-75">
                             <div class="filter_block-heading d-flex justify-content-between" @click.prevent="open = !open">
-                                <h5>Productcategorieën</h5>
+                                <h5 class="font3">Productcategorieën</h5>
                                 <a href="#" class="filter_block-toggle" x-text="open ? '-' : '+'">+</a>
                             </div>
                             <div class="filter_block-heading d-flex justify-content-between" @click.prevent="open = !open">
-                                <h5>Productcategorieën</h5>
+                                <h5 class="font3">Productcategorieën</h5>
                                 <a href="#" class="filter_block-toggle icon-position" x-text="open ? '-' : '+'">-</a>
                             </div>
                         </div>
