@@ -19095,35 +19095,35 @@ html {
   color: #000000;
 }
 
-.font1, .product_item-brand_block h2, .product_item-brand_block .h2 {
+.font-1, .product_item-brand_block h2, .product_item-brand_block .h2 {
   font-size: 44px;
   line-height: 48px;
   font-size: 2.75rem;
   line-height: 3rem;
 }
 
-.font2 {
+.font-2 {
   font-size: 32px;
   line-height: 38px;
   font-size: 2rem;
   line-height: 2.375rem;
 }
 
-.font3, label-big, .product_filter .filter_block .filter_block-heading, .product_item-brand, .product_overview_item .product_overview-title, .product_overview_item .product_overview_item-image-wrapper .product_overview_item-image-wrapper-hover .product_overview_item-image-wrapper-supplier a.product_overview_item-image-wrapper-supplier-name {
+.font-3, label-big, .product_filter .filter_block .filter_block-heading, .product_item-brand, .product_overview_item .product_overview-title, .product_overview_item .product_overview_item-image-wrapper .product_overview_item-image-wrapper-hover .product_overview_item-image-wrapper-supplier a.product_overview_item-image-wrapper-supplier-name {
   font-size: 22px;
   line-height: 28px;
   font-size: 1.375rem;
   line-height: 1.75rem;
 }
 
-.font4, .price-input .separator, .tooltip, .tabs ul li a, .navbar .nav-item .nav-link, label, .table tr th, .product_item-supplier_picker-button, .product_filter .filter-level-3, .product_filter .filter-level-2, .product_filter .filter_block .filter_block-toggle, .product_item-description_long, .product_item-options, .product_item-slogan, .product_item-information, .header .main_header ul li a, .btn-big {
+.font-4, .price-input .separator, .tooltip, .tabs ul li a, .navbar .nav-item .nav-link, label, .table tr th, .product_item-supplier_picker-button, .product_filter .filter-level-3, .product_filter .filter-level-2, .product_filter .filter_block .filter_block-toggle, .product_item-description_long, .product_item-options, .product_item-slogan, .product_item-information, .header .main_header ul li a, .btn-big {
   font-size: 18px;
   line-height: 28px;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.font5, .multiselect-checkbox .multiselect-checkbox-wrapper, .counter-text, .form-select, .extraoptions_popup .extraoptions_popup_item p, .kvk_popup .kvk_popup_item p, .select2-selection ul.select2-selection__rendered .select2-selection__choice, .multiselect ul.multiselect-list .multiselect-list-item, .file-upload-wrapper .file-upload-voorwaarden ul li, .range-slider::before, .range-slider::after,
+.font-5, .multiselect-checkbox .multiselect-checkbox-wrapper, .counter-text, .form-select, .extraoptions_popup .extraoptions_popup_item p, .kvk_popup .kvk_popup_item p, .select2-selection ul.select2-selection__rendered .select2-selection__choice, .multiselect ul.multiselect-list .multiselect-list-item, .file-upload-wrapper .file-upload-voorwaarden ul li, .range-slider::before, .range-slider::after,
 .multi-range-slider::before, .multi-range-slider::after, .adminhead .companyalt p, .breadcrumb .breadcrumb-item, footer ul li a, .table, .btn, .btn-black, .btn-brown, .btn-red, .btn-white, .btn-white-red, .btn-white-complete, .font-heading, .form-control, .product_item-supplier_picker-button, .product_item .productapplications-item-label, .product_item-supplier_picker-dropdown-item-inner-content table, .product_filter .filter-level-5 label, .product_filter .filter-level-4, .product_filter .clear-filters-button, .product_filter .activeFilter, .product_overview-variations.product_overview-variations-big .product_overview-variation_wrapper p, .search-bar input, .languageselector, .breadcrumbs .breadcrumb-item, .small, label, .table tr th {
   font-size: 16px;
   line-height: 26px;
@@ -33234,35 +33234,35 @@ html {
   font-weight: normal;
 }
 
-.font1, .product_item-brand_block h2, .product_item-brand_block .h2 {
+.font-1, .product_item-brand_block h2, .product_item-brand_block .h2 {
   font-size: 44px;
   line-height: 48px;
   font-size: 2.75rem;
   line-height: 3rem;
 }
 
-.font2 {
+.font-2 {
   font-size: 32px;
   line-height: 38px;
   font-size: 2rem;
   line-height: 2.375rem;
 }
 
-.font3, label-big, .product_overview_item .product_overview_item-image-wrapper .product_overview_item-image-wrapper-hover .product_overview_item-image-wrapper-supplier a.product_overview_item-image-wrapper-supplier-name, .product_overview_item .product_overview-title, .product_item-brand, .product_filter .filter_block .filter_block-heading {
+.font-3, label-big, .product_overview_item .product_overview_item-image-wrapper .product_overview_item-image-wrapper-hover .product_overview_item-image-wrapper-supplier a.product_overview_item-image-wrapper-supplier-name, .product_overview_item .product_overview-title, .product_item-brand, .product_filter .filter_block .filter_block-heading {
   font-size: 22px;
   line-height: 28px;
   font-size: 1.375rem;
   line-height: 1.75rem;
 }
 
-.font4, .price-input .separator, .tooltip, .tabs ul li a, .navbar .nav-item .nav-link, label, .table tr th, .btn-big, .header .main_header ul li a, .product_item-information, .product_item-slogan, .product_item-options, .product_item-description_long, .product_filter .filter_block .filter_block-toggle, .product_filter .filter-level-2, .product_filter .filter-level-3, .product_item-supplier_picker-button {
+.font-4, .price-input .separator, .tooltip, .tabs ul li a, .navbar .nav-item .nav-link, label, .table tr th, .btn-big, .header .main_header ul li a, .product_item-information, .product_item-slogan, .product_item-options, .product_item-description_long, .product_filter .filter_block .filter_block-toggle, .product_filter .filter-level-2, .product_filter .filter-level-3, .product_item-supplier_picker-button {
   font-size: 18px;
   line-height: 28px;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.font5, .multiselect-checkbox .multiselect-checkbox-wrapper, .counter-text, .form-select, .extraoptions_popup .extraoptions_popup_item p, .kvk_popup .kvk_popup_item p, .select2-selection ul.select2-selection__rendered .select2-selection__choice, .multiselect ul.multiselect-list .multiselect-list-item, .file-upload-wrapper .file-upload-voorwaarden ul li, .range-slider::before, .range-slider::after,
+.font-5, .multiselect-checkbox .multiselect-checkbox-wrapper, .counter-text, .form-select, .extraoptions_popup .extraoptions_popup_item p, .kvk_popup .kvk_popup_item p, .select2-selection ul.select2-selection__rendered .select2-selection__choice, .multiselect ul.multiselect-list .multiselect-list-item, .file-upload-wrapper .file-upload-voorwaarden ul li, .range-slider::before, .range-slider::after,
 .multi-range-slider::before, .multi-range-slider::after, .adminhead .companyalt p, .breadcrumb .breadcrumb-item, footer ul li a, .table, .btn, .btn-black, .btn-brown, .btn-red, .btn-white, .btn-white-red, .btn-white-complete, .font-heading, .table tr th, label, .small, .breadcrumbs .breadcrumb-item, .languageselector, .search-bar input, .product_overview-variations.product_overview-variations-big .product_overview-variation_wrapper p, .product_filter .activeFilter, .product_filter .clear-filters-button, .product_filter .filter-level-4, .product_filter .filter-level-5 label, .product_item-supplier_picker-dropdown-item-inner-content table, .product_item .productapplications-item-label, .form-control, .product_item-supplier_picker-button {
   font-size: 16px;
   line-height: 26px;

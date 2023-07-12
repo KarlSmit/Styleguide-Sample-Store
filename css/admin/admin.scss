@@ -58,7 +58,7 @@
 }
 
 .form-select, .form-control{
-    @extend .font5;
+    @extend .font-5;
     background-color: $primary_tint_5 !important;
     border: solid 1px $primary_tint_4 !important;
     border-radius: 2px !important;
@@ -124,7 +124,7 @@
 }
 
 .counter-text {
-    @extend .font5;
+    @extend .font-5;
 }
 
 .table-checkbox {
@@ -156,7 +156,7 @@
     }
 
     .multiselect-checkbox-wrapper {
-        @extend .font5;
+        @extend .font-5;
         position: absolute;
         display: block;
         width: 100%;

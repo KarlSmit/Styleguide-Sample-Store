@@ -46,7 +46,7 @@
                 }
 
                 a.product_overview_item-image-wrapper-supplier-name {
-                    @extend .font3;
+                    @extend .font-3;
                     color: $text_color;
                     display: block;
                     margin-top: 4px;
@@ -73,7 +73,7 @@
     }
 
     .product_overview-title {
-        @extend .font3;
+        @extend .font-3;
         font-weight: bold;
 
         &:hover {
@@ -144,7 +144,7 @@
             }
 
             p {
-                @extend .font5;
+                @extend .font-5;
                 font-weight: normal;
                 width: 100%;
                 text-align: center;
@@ -173,11 +173,11 @@
     }
 
     &-brand {
-        @extend .font3;
+        @extend .font-3;
     }
 
     &-information {
-        @extend .font4;
+        @extend .font-4;
         padding-left: 57px;
 
         hr {
@@ -187,7 +187,7 @@
     }
 
     &-slogan {
-        @extend .font4;
+        @extend .font-4;
         font-style: italic;
         font-weight: bold;
         margin-top: 18px;
@@ -199,7 +199,7 @@
     }
 
     &-options {
-        @extend .font4;
+        @extend .font-4;
         @extend .fw-medium;
         color: $text_color;
 
@@ -256,7 +256,7 @@
 }
 
 .product_item-description_long {
-    @extend .font4;
+    @extend .font-4;
 }
 
 .column_split {
@@ -274,7 +274,7 @@
     padding-bottom: 112px;
 
     h2 {
-        @extend .font1;
+        @extend .font-1;
     }
 
     &-img-wrapper {

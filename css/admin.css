@@ -11947,35 +11947,35 @@ html {
   font-weight: normal;
 }
 
-.font1 {
+.font-1 {
   font-size: 44px;
   line-height: 48px;
   font-size: 2.75rem;
   line-height: 3rem;
 }
 
-.font2 {
+.font-2 {
   font-size: 32px;
   line-height: 38px;
   font-size: 2rem;
   line-height: 2.375rem;
 }
 
-.font3, label-big {
+.font-3, label-big {
   font-size: 22px;
   line-height: 28px;
   font-size: 1.375rem;
   line-height: 1.75rem;
 }
 
-.font4, .price-input .separator, .tooltip, .tabs ul li a, .navbar .nav-item .nav-link, label, .table tr th, .btn-big {
+.font-4, .price-input .separator, .tooltip, .tabs ul li a, .navbar .nav-item .nav-link, label, .table tr th, .btn-big {
   font-size: 18px;
   line-height: 28px;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.font5, .multiselect-checkbox .multiselect-checkbox-wrapper, .counter-text, .form-select, .form-control, .extraoptions_popup .extraoptions_popup_item p, .kvk_popup .kvk_popup_item p, .select2-selection ul.select2-selection__rendered .select2-selection__choice, .multiselect ul.multiselect-list .multiselect-list-item, .file-upload-wrapper .file-upload-voorwaarden ul li, .range-slider::before, .range-slider::after,
+.font-5, .multiselect-checkbox .multiselect-checkbox-wrapper, .counter-text, .form-select, .form-control, .extraoptions_popup .extraoptions_popup_item p, .kvk_popup .kvk_popup_item p, .select2-selection ul.select2-selection__rendered .select2-selection__choice, .multiselect ul.multiselect-list .multiselect-list-item, .file-upload-wrapper .file-upload-voorwaarden ul li, .range-slider::before, .range-slider::after,
 .multi-range-slider::before, .multi-range-slider::after, .adminhead .companyalt p, .breadcrumb .breadcrumb-item, .small, footer ul li a, .table, .btn, .btn-white-complete, .btn-white, .btn-white-red, .btn-red, .btn-brown, .btn-black, .font-heading {
   font-size: 16px;
   line-height: 26px;

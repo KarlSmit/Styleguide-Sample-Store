@@ -6,7 +6,7 @@
 @import 'pagination';
 
 .form-control {
-    @extend .font5;
+    @extend .font-5;
     padding: 7px 17px;
     border-radius: 2px !important;
     border-color: $primary_tint_2 !important;

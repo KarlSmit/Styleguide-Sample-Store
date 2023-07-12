@@ -68,23 +68,23 @@ html {
     color: $text_color; 
 }
 
-.font1 {
+.font-1 {
     @include fontSize(44, 48);
 }
 
-.font2 {
+.font-2 {
     @include fontSize(32, 38);
 }
 
-.font3 {
+.font-3 {
     @include fontSize(22, 28);
 }
 
-.font4 {
+.font-4 {
     @include fontSize(18, 28);
 }
 
-.font5 {
+.font-5 {
     @include fontSize(16, 26);
 }
 
@@ -154,7 +154,7 @@ hr {
     }
 
     &-big{ 
-        @extend .font4;
+        @extend .font-4;
         padding: 14px 52px;
     }
 }
@@ -303,7 +303,7 @@ hr {
 
     tr {
         th {
-            @extend .font5;
+            @extend .font-5;
             padding-top: 15px;
             padding-bottom: 15px;
             color: rgb(51, 51, 51);
@@ -320,7 +320,7 @@ hr {
 }
 
 label {
-    @extend .font5;
+    @extend .font-5;
     font-weight: bold;
 }
 

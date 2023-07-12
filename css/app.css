@@ -19095,35 +19095,35 @@ html {
   color: #000000;
 }
 
-.font1, .product_item-brand_block h2, .product_item-brand_block .h2 {
+.font-1, .product_item-brand_block h2, .product_item-brand_block .h2 {
   font-size: 44px;
   line-height: 48px;
   font-size: 2.75rem;
   line-height: 3rem;
 }
 
-.font2 {
+.font-2 {
   font-size: 32px;
   line-height: 38px;
   font-size: 2rem;
   line-height: 2.375rem;
 }
 
-.font3, .product_filter .filter_block .filter_block-heading, .product_item-brand, .product_overview_item .product_overview-title, .product_overview_item .product_overview_item-image-wrapper .product_overview_item-image-wrapper-hover .product_overview_item-image-wrapper-supplier a.product_overview_item-image-wrapper-supplier-name {
+.font-3, .product_filter .filter_block .filter_block-heading, .product_item-brand, .product_overview_item .product_overview-title, .product_overview_item .product_overview_item-image-wrapper .product_overview_item-image-wrapper-hover .product_overview_item-image-wrapper-supplier a.product_overview_item-image-wrapper-supplier-name {
   font-size: 22px;
   line-height: 28px;
   font-size: 1.375rem;
   line-height: 1.75rem;
 }
 
-.font4, .product_item-supplier_picker-button, .product_filter .filter-level-3, .product_filter .filter-level-2, .product_filter .filter_block .filter_block-toggle, .product_item-description_long, .product_item-options, .product_item-slogan, .product_item-information, .header .main_header ul li a, .btn-big {
+.font-4, .product_item-supplier_picker-button, .product_filter .filter-level-3, .product_filter .filter-level-2, .product_filter .filter_block .filter_block-toggle, .product_item-description_long, .product_item-options, .product_item-slogan, .product_item-information, .header .main_header ul li a, .btn-big {
   font-size: 18px;
   line-height: 28px;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.font5, .form-control, .product_item-supplier_picker-button, .product_item .productapplications-item-label, .product_item-supplier_picker-dropdown-item-inner-content table, .product_filter .filter-level-5 label, .product_filter .filter-level-4, .product_filter .clear-filters-button, .product_filter .activeFilter, .product_overview-variations.product_overview-variations-big .product_overview-variation_wrapper p, .search-bar input, .languageselector, .breadcrumbs .breadcrumb-item, .small, label, .table tr th {
+.font-5, .form-control, .product_item-supplier_picker-button, .product_item .productapplications-item-label, .product_item-supplier_picker-dropdown-item-inner-content table, .product_filter .filter-level-5 label, .product_filter .filter-level-4, .product_filter .clear-filters-button, .product_filter .activeFilter, .product_overview-variations.product_overview-variations-big .product_overview-variation_wrapper p, .search-bar input, .languageselector, .breadcrumbs .breadcrumb-item, .small, label, .table tr th {
   font-size: 16px;
   line-height: 26px;
   font-size: 1rem;

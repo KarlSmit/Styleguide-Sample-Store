@@ -21,7 +21,7 @@
                 overflow: hidden;
 
                 a {
-                    @extend .font4;
+                    @extend .font-4;
                     font-weight: normal !important;
                     text-decoration: none;
                     color: $text_color;
@@ -80,7 +80,7 @@
     }
 
     .breadcrumb-item {
-        @extend .font5;
+        @extend .font-5;
         @extend .text-hover-brown;
         @extend .fw-medium;
         padding: 0;
@@ -109,7 +109,7 @@
 }
 
 .languageselector {
-    @extend .font5;
+    @extend .font-5;
     color: $text_color;
     font-weight: bold;
     text-transform: uppercase;
@@ -125,7 +125,7 @@
         margin-right: 13px;
     }
     input {
-        @extend .font5;
+        @extend .font-5;
         padding-left: 41px;
     }
 }

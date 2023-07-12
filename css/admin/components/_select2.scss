@@ -16,7 +16,7 @@
     ul.select2-selection__rendered {
         outline-width: 30px !important;
         .select2-selection__choice {
-            @extend .font5;
+            @extend .font-5;
             background-color: $secondary_tint_5 !important;
             border-radius: 50px !important;
             border: none !important;

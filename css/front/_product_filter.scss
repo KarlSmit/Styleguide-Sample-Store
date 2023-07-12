@@ -64,7 +64,7 @@
     }
 
     .activeFilter {
-        @extend .font5;
+        @extend .font-5;
         flex-wrap: wrap;
         gap: 10px;
 
@@ -89,7 +89,7 @@
     }
 
     .clear-filters-button {
-        @extend .font5;
+        @extend .font-5;
         text-decoration: underline;
         font-weight: normal;
 
@@ -102,13 +102,13 @@
         margin-bottom: 41px;
 
         .filter_block-heading {
-            @extend .font3;
+            @extend .font-3;
             margin-bottom: 19px;
             padding-right: 16px;
         }
 
         .filter_block-toggle {
-            @extend .font4;
+            @extend .font-4;
             text-decoration: none;
             color: $text_color;
         }
@@ -134,7 +134,7 @@
     }
 
     .filter-level-2 {
-        @extend .font4;
+        @extend .font-4;
         color: $text_color;
 
         &.filter-selected {
@@ -144,7 +144,7 @@
     }
 
     .filter-level-3 {
-        @extend .font4;
+        @extend .font-4;
         @extend .fw-medium;
         padding-left: 31px !important;
         color: $primary_tint_2;
@@ -156,7 +156,7 @@
     }
 
     .filter-level-4 {
-        @extend .font5;
+        @extend .font-5;
         color: $primary_tint_2;
 
         &.filter-selected {
@@ -175,7 +175,7 @@
 
     .filter-level-5 {
         label {
-            @extend .font5;
+            @extend .font-5;
             color: $text-color;
 
             &:hover {

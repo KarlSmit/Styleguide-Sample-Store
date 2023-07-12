@@ -58,7 +58,7 @@
 
 .range-slider::before, .range-slider::after,
 .multi-range-slider::before, .multi-range-slider::after {
-    @extend .font5;
+    @extend .font-5;
     position: absolute;
     padding: 0.25rem;
     border-radius: 0.25rem;
@@ -108,7 +108,7 @@
 }
 
 .tooltip {
-    @extend .font4;
+    @extend .font-4;
     position: absolute;
     display: block;
     text-align: center;
@@ -181,7 +181,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .price-input .separator {
-    @extend .font4;
+    @extend .font-4;
     width: 130px;
     display: flex;
     align-items: center;

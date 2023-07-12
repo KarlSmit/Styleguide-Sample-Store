@@ -15,7 +15,7 @@
         padding: 5px;
 
         p {
-            @extend .font5;
+            @extend .font-5;
             margin: 0;
             text-align: center;
         }
@@ -35,7 +35,7 @@
             overflow: hidden;
 
             a {
-                @extend .font4;
+                @extend .font-4;
                 padding: 10px 14px;
                 font-weight: normal !important;
                 text-decoration: none;
